@@ -1,0 +1,42 @@
+/* .mainSidebar{
+    position: fixed;
+} */
+.logout{
+  
+    margin-top: 90px;
+}
+@media only screen and (max-width:700px){
+    .menus{
+      padding: 0;
+    }
+    .menu{
+        max-width: 80px;
+        }
+    .menu p{
+        font-size: xx-small;
+        color: aqua;
+       
+    }
+}
+
+@media only screen and (max-width:500px){
+    .main{
+        max-width: 400px;
+    }
+    .logo{
+       max-height: 30px;
+        max-width: 50px;
+    }
+    .menus{
+        max-width: 40px;
+
+    }
+    .menu{
+        max-width: 40px;
+    }
+    .menu p{
+        display: none;
+        
+    }
+    
+}

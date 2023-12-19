@@ -1,0 +1,30 @@
+@media only screen and (max-width:570px){
+    .mainTopbar{
+        background-color: black;
+        display: flex;
+    }
+.righttop{
+    
+flex: 6;
+
+}
+.lefttop{
+    flex: 1;
+   max-width: 400px;
+   background-color: blue;}
+.inputtop{
+ max-width: 160px;   
+}
+.not{
+   max-width: 18px;
+   max-height: 18px;
+}
+.namesRole h1,h5{
+    display: none;
+}
+.account{
+  max-width: 32px;
+  max-height: 30px;
+}
+
+}

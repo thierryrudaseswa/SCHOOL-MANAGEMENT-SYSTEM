@@ -1,0 +1,142 @@
+
+#box{
+    background: linear-gradient(90deg, #E6E6E6 8px, transparent 1%) repeat-y, linear-gradient(#E6E6E6 8px, transparent 1%) repeat-x, #FFFFFF;
+
+
+}
+
+@media only screen and (max-width:1175px){
+    .box{
+        max-width: 150px;
+        
+    } 
+
+    .middlemain{
+        background-color: aqua;
+    }
+
+}
+
+@media only screen and (max-width:942px){
+    .box{
+        max-width: 130px;
+        ;
+
+    }
+    .middlemain{
+
+        max-width: 450px;
+    }
+    .bottom{
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width:890px){
+    .top{
+        max-width: 420px;
+        padding-right: 3px;
+
+    }
+    .box{
+        max-height: 180px;
+    }
+    .middlemain{
+        max-width: 420px;
+    }
+    .bottom{
+        max-width: 420px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:820px){
+    .top{
+        background-color: white;
+        max-width: 600px;
+    }
+
+    .box{
+        max-width: 180px;
+         background-color: blue; 
+         }
+
+    .middlemain{
+        max-width: 600px;
+    }
+    .bottom{
+        max-width: 600px;
+    }
+   
+}
+@media only screen and (max-width: 760px){
+ .top{
+        background-color: white;
+        max-width: 550px;
+    }
+  .box{
+        max-width: 180px;
+         background-color: blue; 
+         }
+ .middlemain{
+        max-width: 550px;
+    }
+    .bottom{
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .top{
+           background-color: white;
+           max-width: 500px;
+       }
+     .box{
+           max-width: 180px;
+            background-color: blue; 
+            }
+    .middlemain{
+           max-width: 500px;
+       }
+       .bottom{
+           max-width: 500px;
+       }
+   }
+
+
+   @media only screen and (max-width: 640px){
+    .top{
+           background-color: white;
+           max-width: 450px;
+       }
+     .box{
+           max-width: 180px;
+            background-color: blue; 
+            }
+    .middlemain{
+           max-width: 450px;
+       }
+       .bottom{
+           max-width: 450px;
+       }
+   }
+
+   @media only screen and (max-width: 575px){
+ .top{
+        background-color: black;
+        max-width:400px;
+    }
+  .box{
+        max-width: 180px;
+         background-color: blue; 
+         }
+ .middlemain{
+        max-width: 400px;
+    }
+    .bottom{
+        max-width: 400px;
+    }
+}
+
