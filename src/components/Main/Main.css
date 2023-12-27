@@ -1,3 +1,14 @@
+.right{
+    background-color: #E6E6E6;
+    max-height: 880px;
+    row-gap: 45px;
+  
+}
+.left{
+    max-height: 880px;
+    row-gap: 91px;
+}
+
 
 #box{
     background: linear-gradient(90deg, #E6E6E6 8px, transparent 1%) repeat-y, linear-gradient(#E6E6E6 8px, transparent 1%) repeat-x, #FFFFFF;

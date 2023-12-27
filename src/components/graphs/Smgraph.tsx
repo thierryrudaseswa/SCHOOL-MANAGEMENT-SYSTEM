@@ -1,11 +1,13 @@
+// SmGraph.tsx
 import React, { useEffect, useRef } from 'react';
 import ApexCharts from 'react-apexcharts';
+import { ApexOptions } from 'apexcharts';
 
-const ChartComponent: React.FC = () => {
-  const chartRef = useRef<any>(null);
+const SmGraph: React.FC = () => {
+  const chartRef = useRef<ApexCharts | null>(null);
 
   useEffect(() => {
-    const options = {
+    const options: ApexOptions = {
       series: [{
         name: 'Servings',
         data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35],
@@ -64,7 +66,7 @@ const ChartComponent: React.FC = () => {
         type: 'gradient',
         gradient: {
           shade: 'light',
-          type: "horizontal",
+          type: 'horizontal',
           shadeIntensity: 0.25,
           gradientToColors: undefined,
           inverseColors: true,
@@ -81,21 +83,20 @@ const ChartComponent: React.FC = () => {
       return;
     }
 
-    chartRef.current = new ApexCharts(chartElement, options);
+    chartRef.current = new ApexCharts(chartElement as HTMLElement, options);
     chartRef.current.render();
 
-   
     return () => {
       if (chartRef.current) {
-        
-        chartRef.current.destroy();
+        const chartInstance = (chartRef.current as any).chart;
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
       }
     };
   }, []);
 
-  return (
-    <div id="chart"></div>
-  );
+  return <div id="chart"></div>;
 };
 
-export default ChartComponent;
+export default SmGraph;

@@ -13,7 +13,7 @@ const DashBoard = () => {
         <div className="topbar h-12 bg-white flex ">
           <TopBar />
         </div>
-        <div className="mainpart bg-slate-800 h-5/6">
+        <div className="mainpart max-h-full">
           <Main />
         </div>
       </div>
