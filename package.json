@@ -16,7 +16,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.4",
     "@mui/x-date-pickers": "^7.0.0-alpha.6",
     "@types/react-router-dom": "^5.3.3",
-    "apexcharts": "^3.44.1",
+    "apexcharts": "^3.45.1",
     "autoprefixer": "^10.4.16",
     "dayjs": "^1.11.10",
     "jsx-runtime": "^1.2.0",

@@ -9,6 +9,8 @@ import cal3 from "../../assets/images/cal3.svg"
 import cal4 from "../../assets/images/cal4.svg"
 import cal from "../../assets/images/cal.svg"
 import BasicDateCalendar from "../Calendar/Calendar";
+import mess from "../../assets/images/messenger.png"
+import ApexChart from "../graphs/perfGraph";
 
 
 const Main= () => {
@@ -80,7 +82,38 @@ const Main= () => {
             </div>
           </div>
           <div className="middleright  col-span-2 p-2">
-            <div className="calendar bg-slate-500">
+            <div className=" bg-slate-500 h-44 grid grid-rows-6">
+
+{/* academic performance show */}
+
+<div className="topm row-span-1 bg-slate-300 text-sm font-bold flex items-center gap-4 pl-4">
+  <p>academic performance</p>
+  <img src={mess} alt="" />
+</div>
+<div className="middlem row-span-4 bg-red-300">
+  <ApexChart />
+</div>
+<div className="bottomm row-span-1 ">
+
+<div className="bottomm2 bg-red-700  flex gap-5">
+<div className=" gap-2 flex bg-white">
+<div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#2B59FF"}}></div>
+  <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#96FCB2"}}></div>
+  <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#FAE2A3"}}></div>
+  </div>
+  <p className=" text-xs font-bold">Mid Term</p>
+</div>
+<div className="bottomm2 bg-red-700  flex gap-5">
+<div className=" gap-2 flex bg-white">
+<div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#ED8424"}}></div>
+  <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#39ACF7"}}></div>
+  <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#EB75BC"}}></div>
+  </div>
+  <p className=" text-xs font-bold">Examination</p>
+
+</div>
+</div>
+
 
             </div>
           </div>
