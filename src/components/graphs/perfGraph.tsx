@@ -1,28 +1,25 @@
-// Import necessary libraries and types
 import React from 'react';
 import ReactApexChart from 'react-apexcharts';
 import { ApexOptions } from 'apexcharts';
-import "./perfGraph.css"
+import "./perfGraph.css";
 
-// Extend ApexOptions to include zoom property
 interface ExtendedApexOptions extends ApexOptions {
   zoom?: {
     enabled?: boolean;
   };
 }
 
-// Define component props and state
 interface ApexChartProps {}
 
 interface ApexChartState {
   series: {
     name: string;
     data: number[];
+    color?: string; // Individual color for each series
   }[];
-  options: ExtendedApexOptions; // Use ExtendedApexOptions type
+  options: ExtendedApexOptions; 
 }
 
-// Define the ApexChart component
 class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
   constructor(props: ApexChartProps) {
     super(props);
@@ -31,29 +28,13 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
       series: [
         {
           name: 'Servings',
-          data: [44, 55, 41, 67, 22, 43], 
+          data: [74, 82, 78, 83, 84, 68],
+          color: "#2B59FF" // Color for the first data point
         },
       ],
       options: {
-        annotations: {
-          points: [
-            {
-              x: 'Bananas',
-              seriesIndex: 0,
-              label: {
-                borderColor: '#775DD0',
-                offsetY: 0,
-                style: {
-                  color: '#fff',
-                  background: '#775DD0',
-                },
-                text: 'Bananas are good',
-              },
-            },
-          ],
-        },
         chart: {
-          height: 200, // Reduced height
+          height: 200,
           type: 'bar',
         },
         plotOptions: {
@@ -75,15 +56,15 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
         },
         xaxis: {
           labels: {
-            rotate: -35,
+            rotate: -30,
           },
           categories: [
-           'MidTerm 1 ',
-           'Term 1',
-           'MidTerm 2',
-           'Term 2',
-           'Mid Term 3',
-           'Term 3'
+            'MidTerm 1 ',
+            'Term 1',
+            'MidTerm 2',
+            'Term 2',
+            'Mid Term 3',
+            'Term 3'
           ],
           tickPlacement: 'on',
         },
@@ -91,21 +72,10 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
           title: {
             text: 'Servings',
           },
+          min: 0, 
+          max: 100, 
         },
-        fill: {
-          type: 'gradient',
-          gradient: {
-            shade: 'light',
-            type: 'horizontal',
-            shadeIntensity: 0.25,
-            gradientToColors: undefined,
-            inverseColors: true,
-            opacityFrom: 0.85,
-            opacityTo: 0.85,
-            stops: [50, 0, 100],
-          },
-        },
-        // Disable zoom icons
+        
         zoom: {
           enabled: false,
         },
@@ -120,7 +90,7 @@ class ApexChart extends React.Component<ApexChartProps, ApexChartState> {
           options={this.state.options}
           series={this.state.series}
           type="bar"
-          height={250}
+          height={228} 
         />
       </div>
     );

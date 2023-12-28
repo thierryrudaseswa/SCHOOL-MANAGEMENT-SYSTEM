@@ -26,10 +26,10 @@ const Main= () => {
     <div className='lefright p-0 grid grid-cols-6 max-tablet2:block'>
 
 
-      <div className="left col-span-4 grid grid-rows-5 bg-black ">
+      <div className="left col-span-4">
 
 
-        <div className="top flex  gap-8 p-2 h-48 ">
+        <div className="top flex  gap-8 p-2 h-48 bg-white">
           <div className="box h-44 text-white mt-1 w-48 rounded-lg bg-slate-200 bg-gradient-to-r from-cyan-500 to-blue-500" >
           <div className="box2 grid grid-rows-6 p-2">
           <div className="topbox row-span-1 flex justify-between">
@@ -50,7 +50,7 @@ const Main= () => {
           <div className="box h-44 mt-1 w-48 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 ">
           </div>
         </div>
-        <div className="middlemain row-span-1 grid grid-cols-6 bg-white h-48">
+        <div className="middlemain  grid grid-cols-6 h-72 bg-white">
           <div className="middlelef  col col-span-4  grid grid-rows-6">
             <div className="head row-span-1 flex items-center pl-5">
               <h1 className=" text-sm font-bold">Recent Activity</h1>
@@ -82,29 +82,29 @@ const Main= () => {
             </div>
           </div>
           <div className="middleright  col-span-2 p-2">
-            <div className=" bg-slate-500 h-44 grid grid-rows-6">
+            <div className="  h-70">
 
 {/* academic performance show */}
 
-<div className="topm row-span-1 bg-slate-300 text-sm font-bold flex items-center gap-4 pl-4">
+<div className="topm row-span-1  text-sm font-bold flex items-center gap-4 pl-4">
   <p>academic performance</p>
   <img src={mess} alt="" />
 </div>
-<div className="middlem row-span-4 bg-red-300">
+<div className="middlem h-56 ">
   <ApexChart />
 </div>
-<div className="bottomm row-span-1 ">
+<div className="bottomm row-span-1">
 
-<div className="bottomm2 bg-red-700  flex gap-5">
-<div className=" gap-2 flex bg-white">
+<div className="bottomm2   flex gap-5">
+<div className=" gap-2 flex ">
 <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#2B59FF"}}></div>
   <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#96FCB2"}}></div>
   <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#FAE2A3"}}></div>
   </div>
   <p className=" text-xs font-bold">Mid Term</p>
 </div>
-<div className="bottomm2 bg-red-700  flex gap-5">
-<div className=" gap-2 flex bg-white">
+<div className="bottomm2  flex gap-5">
+<div className=" gap-2 flex">
 <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#ED8424"}}></div>
   <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#39ACF7"}}></div>
   <div className=" h-3 w-3 rounded-full" style={{backgroundColor:"#EB75BC"}}></div>
@@ -118,7 +118,7 @@ const Main= () => {
             </div>
           </div>
         </div>
-        <div className="bottom row-span-2">
+        <div className="bottom bg-slate-50 h-80">
           <div className="botmain">
             <div className="upperword grid grid-cols-6 ">
               <h1 className=" col-span-2 bg-slate-400 pl-5 font-bold flex items-center">Earning</h1>
