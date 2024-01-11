@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0.8;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-image {
+    animation: fadeIn 6s ease-out infinite; /* Add 'infinite' for continuous animation */
+  }
+  

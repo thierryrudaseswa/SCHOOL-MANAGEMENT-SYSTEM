@@ -1,0 +1,31 @@
+@media only screen and (max-width:950px){
+    .nam{
+        font-size: x-small;
+    }
+    .par{
+        font-size: xx-small;
+        overflow-y: hidden;
+        background-color: aqua;
+        height: 20px;
+    }
+    .am{
+        font-size: xx-small;
+
+    }
+}
+
+
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  .input {
+    border: none;
+  }
+  
+  /* Show the border when the input is focused */
+  .input:focus {
+    outline: none; /* Optional: Remove the focus outline */
+    border: none;
+  }
+  

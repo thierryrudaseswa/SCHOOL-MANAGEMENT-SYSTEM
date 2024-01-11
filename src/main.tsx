@@ -1,11 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { CssBaseline } from '@mui/material';
+import { StylesProvider } from '@mui/styles';
 
 import App from './App.tsx';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const rootElement = document.getElementById('root')!;
+const root = createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <StylesProvider injectFirst>
+      <CssBaseline />
+      <Router>
+        <App />
+      </Router>
+    </StylesProvider>
+  </React.StrictMode>,
 );

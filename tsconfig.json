@@ -17,9 +17,10 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "useDefineForClassFields": true,
+    "esModuleInterop": true,
     "declaration": true
   },
-  "include": ["src"],
+  "include": ["src/**/*", "@fullcalendar/react.d.ts"],
   "references": [
     {
       "extend": "./tsconfig.node.json"
