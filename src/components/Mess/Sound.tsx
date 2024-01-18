@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from "react";
 import prof from "../../assets/images/prof.png";
 const YourComponent = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -9,12 +9,8 @@ const YourComponent = () => {
 
   return (
     <div className="flex items-start gap-2.5">
-      <img
-        className="w-8 h-8 rounded-full"
-        src={prof}
-        alt="Jese image"
-      />
-      <div className="flex flex-col gap-2.5 w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+      <img className="w-8 h-8 rounded-full" src={prof} alt="Jese image" />
+      <div className="flex flex-col gap-2.5 w-full max-w-[320px] leading-1.5 p-4 border-gray-200  rounded-e-xl rounded-es-xl bg-slate-200 ">
         <div className="flex items-center space-x-2 rtl:space-x-reverse">
           <span className="text-sm font-semibold text-gray-900 dark:text-white">
             Bonnie Green
@@ -45,33 +41,248 @@ const YourComponent = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect y="17" width="3" height="6" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="7" y="15.5" width="3" height="9" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="21" y="6.5" width="3" height="27" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="14" y="6.5" width="3" height="27" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="28" y="3" width="3" height="34" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="35" y="3" width="3" height="34" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="42" y="5.5" width="3" height="29" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="49" y="10" width="3" height="20" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="56" y="13.5" width="3" height="13" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="63" y="16" width="3" height="8" rx="1.5" fill="#6B7280" className="dark:fill-white" />
-            <rect x="70" y="12.5" width="3" height="15" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="77" y="3" width="3" height="34" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="84" y="3" width="3" height="34" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="91" y="0.5" width="3" height="39" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="98" y="0.5" width="3" height="39" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="105" y="2" width="3" height="36" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="112" y="6.5" width="3" height="27" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="119" y="9" width="3" height="22" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="126" y="11.5" width="3" height="17" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="133" y="2" width="3" height="36" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="140" y="2" width="3" height="36" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="147" y="7" width="3" height="26" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="154" y="9" width="3" height="22" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="161" y="9" width="3" height="22" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="168" y="13.5" width="3" height="13" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="175" y="16" width="3" height="8" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
-            <rect x="182" y="17.5" width="3" height="5" rx="1.5" fill="#E5E7EB" className="dark:fill-gray-500" />
+            <rect
+              y="17"
+              width="3"
+              height="6"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="7"
+              y="15.5"
+              width="3"
+              height="9"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="21"
+              y="6.5"
+              width="3"
+              height="27"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="14"
+              y="6.5"
+              width="3"
+              height="27"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="28"
+              y="3"
+              width="3"
+              height="34"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="35"
+              y="3"
+              width="3"
+              height="34"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="42"
+              y="5.5"
+              width="3"
+              height="29"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="49"
+              y="10"
+              width="3"
+              height="20"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="56"
+              y="13.5"
+              width="3"
+              height="13"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="63"
+              y="16"
+              width="3"
+              height="8"
+              rx="1.5"
+              fill="#6B7280"
+              className="dark:fill-white"
+            />
+            <rect
+              x="70"
+              y="12.5"
+              width="3"
+              height="15"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="77"
+              y="3"
+              width="3"
+              height="34"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="84"
+              y="3"
+              width="3"
+              height="34"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="91"
+              y="0.5"
+              width="3"
+              height="39"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="98"
+              y="0.5"
+              width="3"
+              height="39"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="105"
+              y="2"
+              width="3"
+              height="36"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="112"
+              y="6.5"
+              width="3"
+              height="27"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="119"
+              y="9"
+              width="3"
+              height="22"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="126"
+              y="11.5"
+              width="3"
+              height="17"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="133"
+              y="2"
+              width="3"
+              height="36"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="140"
+              y="2"
+              width="3"
+              height="36"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="147"
+              y="7"
+              width="3"
+              height="26"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="154"
+              y="9"
+              width="3"
+              height="22"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="161"
+              y="9"
+              width="3"
+              height="22"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="168"
+              y="13.5"
+              width="3"
+              height="13"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="175"
+              y="16"
+              width="3"
+              height="8"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
+            <rect
+              x="182"
+              y="17.5"
+              width="3"
+              height="5"
+              rx="1.5"
+              fill="#E5E7EB"
+              className="dark:fill-gray-500"
+            />
             <rect x="66" y="16" width="8" height="8" rx="4" fill="#1C64F2" />
           </svg>
           <span className="inline-flex self-center items-center p-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -101,49 +312,34 @@ const YourComponent = () => {
       {isDropdownVisible && (
         <div
           id="dropdownDots"
-          className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-40 dark:bg-gray-700 dark:divide-gray-600"
+          className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-40 dark:divide-gray-600"
         >
           <ul
-            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+            className="py-2 text-sm text-gray-700 "
             aria-labelledby="dropdownMenuIconButton"
           >
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+              <a href="#" className="block px-4 py-2 hover:bg-gray-100 ">
                 Reply
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+              <a href="#" className="block px-4 py-2 ">
                 Forward
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+              <a href="#" className="block px-4 py-2 e">
                 Copy
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+              <a href="#" className="block px-4 py-2 ">
                 Report
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              >
+              <a href="#" className="block px-4 py-2 ">
                 Delete
               </a>
             </li>

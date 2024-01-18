@@ -18,8 +18,8 @@ const columns = [
 const Main2 = () => {
  
   return (
-    <div className="lefright p-0 grid max-h-screen grid-cols-6 max-tablet2:block bg-slate-200">
-      <div className="left col-span-4 bg-white mt-3 overflow-scroll ml-4 rounded-t-xl ">
+    <div className="lefright p-0 grid max-h-screen grid-cols-6 max-tablet2:block ">
+      <div className="scroll overflow-y-scroll left col-span-4  bg-white mt-3 overflow-scroll ml-4 rounded-t-xl ">
       <div className="head h-20 flex justify-center items-center font-extrabold text-2xl">
            Events
             </div>

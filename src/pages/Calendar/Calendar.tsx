@@ -4,7 +4,6 @@ import TopBar from "../../components/TopBar/TopBar";
 import MyCalendar from "../../components/calendarCo/CalendarCo";
 
 const Calendar = () => {
-  // Example data for initialEvents
   const initialEvents = [
     {
       id: "1",
@@ -13,7 +12,7 @@ const Calendar = () => {
       end: new Date(),
       allDay: true,
     },
-    // Add more events as needed
+    
   ];
 
   return (
@@ -21,11 +20,11 @@ const Calendar = () => {
       <div className="sidebar col-span-1">
         <SideBar />
       </div>
-      <div className="main col-span-4 bg-slate-900">
+      <div className="main col-span-4 bg-slate-200">
         <div className="topbar h-12 bg-white flex ">
           <TopBar />
         </div>
-        <div className="mainpart max-h-full bg-white flex justify-center items-center m-5" style={{width:"1300px"}}>
+        <div className="mainpart max-h-full bg-white rounded-lg flex justify-center items-center ml-10 mt-6" style={{width:"1300px"}}>
           <MyCalendar initialEvents={initialEvents} />
         </div>
       </div>

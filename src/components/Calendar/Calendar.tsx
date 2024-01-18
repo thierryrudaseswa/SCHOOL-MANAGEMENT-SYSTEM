@@ -9,9 +9,7 @@ export default function BasicDateCalendar() {
       <DateCalendar
         sx={{
           width: '200px',
-          height: '300px',
-        //   backgroundColor:'#000'
-        
+          height: '300px',  
         }}
       />
     </LocalizationProvider>

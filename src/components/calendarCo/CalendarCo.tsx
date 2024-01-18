@@ -41,7 +41,7 @@ const MyCalendar: React.FC<Props> = ({ initialEvents }) => {
   const theme = useTheme();
   const colors = {
     primary: theme.palette.primary,
-    // greenAccent: theme.palette.greenAccent,
+   
   };
   const [currentEvents, setCurrentEvents] = useState<Event[]>(initialEvents);
 
@@ -52,10 +52,10 @@ const MyCalendar: React.FC<Props> = ({ initialEvents }) => {
 
     if (title) {
       const newEvent: Event = {
-        id: `${selected.start}-${title}`, // Use selected.start directly
+        id: `${selected.start}-${title}`, 
         title,
-        start: new Date(selected.startStr), // Convert start string to Date
-        end: selected.endStr ? new Date(selected.endStr) : undefined, // Convert end string to Date if present
+        start: new Date(selected.startStr), 
+        end: selected.endStr ? new Date(selected.endStr) : undefined, 
         allDay: selected.allDay,
       };
 
@@ -77,17 +77,16 @@ const MyCalendar: React.FC<Props> = ({ initialEvents }) => {
 
   return (
     <Box m="20px" width="1200px" height="700px" borderRadius="20px"> 
-      {/* Use Header component */}
+    
       <Header title="Calendar" subtitle="Full Calendar Interactive Page" />
 
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
         <Box
           flex="1 1 20%"
-          // backgroundColor={colors.primary[400]}
           p="5px"
           borderRadius="4px"
-          component="div" // Add the 'component' prop
+          component="div" 
         >
           <Typography variant="h5">Events</Typography>
           <List>
@@ -95,7 +94,7 @@ const MyCalendar: React.FC<Props> = ({ initialEvents }) => {
               <ListItem
                 key={event.id}
                 sx={{
-                  // backgroundColor: colors.greenAccent[500],
+                  
                   margin: "10px 0",
                   borderRadius: "2px",
                 }}

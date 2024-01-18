@@ -23,14 +23,14 @@ const TypewriterText: React.FC<{ text?: string; onAnimationComplete: () => void 
           setTimeout(() => {
             setIsAnimating(false);
             onAnimationComplete();
-          }, 1000); // Delay after completing the text
+          }, 1000); 
           return prev;
         }
 
         return prev + text[currentIndex];
       });
       setCurrentIndex((prev) => prev + 1);
-    }, 100); // Delay between letters
+    }, 100); 
 
     return () => clearInterval(intervalId);
   }, [text, currentIndex, onAnimationComplete]);
@@ -50,15 +50,15 @@ const Page: React.FC = () => {
   };
 
   useEffect(() => {
-    // Trigger the animation on component mount
+    
     restartAnimation();
   }, []);
 
   return (
-    <div className='grid grid-cols-7'>
-      <div className="col-span-4 flex items-center justify-center" style={{ height: "88vh" }}>
+    <div className='mainPage grid grid-cols-7'>
+      <div className="word col-span-4 flex items-center justify-center" style={{ height: "88vh" }}>
         <div className="grid grid-cols-1 items-center justify-end gap-12" style={{ width: "780px" }}>
-          <h1 className='text-white font-bold text-7xl'>
+          <h1 className='school text-white font-bold text-7xl'>
             <TypewriterText text="School Management System" onAnimationComplete={handleHeadingComplete} />
           </h1>
           {isHeadingComplete && (

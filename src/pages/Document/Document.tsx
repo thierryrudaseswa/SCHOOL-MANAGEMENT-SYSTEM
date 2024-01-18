@@ -41,7 +41,7 @@ const Finance = () => {
         <div className="sidebar col-span-1">
           <SideBar />
         </div>
-        <div className="main col-span-4 bg-slate-900">
+        <div className="main col-span-4 bg-slate-200">
           <div className="topbar h-12 bg-white flex ">
             <TopBar />
           </div>

@@ -1,55 +1,46 @@
-// import React from "react";
-// import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import LandPage from "./pages/LandPage/LandPage";
+import LoginClient from "./pages/LoginClient/LoginClient";
+import LoginAdmin from "./pages/LoginAdmin/LoginAdmin";
+import DashBoard from "./pages/DashBoard/DashBoard";
+import Calendar from "./pages/Calendar/Calendar";
+import Chat from "./pages/Chat/Chat.tsx";
+import Document from "./pages/Document/Document";
+import Events from "./pages/Events/Events";
+import Finance3 from "./pages/Finance3/Finance3";
+import FinancePa2 from "./pages/Finance2/FinancePa2";
+import FinancePa from "./pages/Finance/FinancePa";
+import SchoolReg from "./pages/SchoolReg/SchoolReg";
+import SignStudent from "./pages/SignClient/SignStudent";
 
-// import { LoginAdmin, LoginClient, SignAdmin, SignClient } from "./allImports";
-// import SchoolReg from "./pages/SchoolReg/SchoolReg";
-// import DashBoard from "./pages/DashBoard/DashBoard";
-// import FinancePa from "./pages/Finance/FinancePa";
-// import FinancePa2 from "./pages/Finance2/FinancePa2";
-// import Document from "./pages/Document/Document";
-// import Events from "./pages/Events/Events";
-// import Calendar from "./pages/Calendar/Calendar";
-// import Chat from "./pages/Chat/Chat";
-// import Finance3 from "./pages/Finance3/Finance3";
 
-
-
-// Define the routes in an object to make it more maintainable
-// const routes = [
-//   { path: '/', component: LoginAdmin },
-//   { path: '/LoginClient', component: LoginClient },
-//   { path: '/SignAdmin', component: SignAdmin },
-//   { path: '/SignClient', component: SignClient }
-// ];
 
 function App() {
   return (
     <>
-    <LandPage />
-    {/* <Finance3 /> */}
-    {/* <Chat /> */}
-    {/* <Calendar /> */}
-    {/* <Events /> */}
-    {/* <Document /> */}
-    {/* <DashBoard /> */}
-    {/* <FinancePa /> */}
-       {/* <FinancePa2 /> */}
-    {/* <LoginAdmin/> */}
-    {/* <SchoolReg /> */}
-    </>
-    // <Router>
-    //   <Switch>
-  
-    //     {routes.map((route, index) => (
-    //       <Route key={index} path={route.path} component={route.component} />
-    //     ))}
+ 
+      <Routes>
+        <Route path="/" element={<LandPage />} />
 
-     
-    //     <Route path="*" render={() => <Redirect to="/LoginAdmin" />} />
-    //   </Switch>
-    // </Router>
+        <Route path="/register" element={<SchoolReg />} />
+        <Route path="/registerS" element={<SignStudent />} />
+
+        <Route path="/login" element={<LoginAdmin />} />
+        <Route path="/loginUser" element={<LoginClient />} />
+
+        <Route path="/dashboard" element={<DashBoard />} />
+        <Route path="/calendar" element={<Calendar />} />
+
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/document" element={<Document />} />
+
+        <Route path="/events" element={<Events />} />
+        <Route path="/finance3" element={<Finance3 />} />
+
+        <Route path="/financePa2" element={<FinancePa2 />} />
+        <Route path="/financePa" element={<FinancePa />} />
+      </Routes>
+    </>
   );
 }
 

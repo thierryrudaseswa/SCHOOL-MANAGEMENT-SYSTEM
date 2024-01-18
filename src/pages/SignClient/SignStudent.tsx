@@ -1,8 +1,9 @@
-
-import Form from "../../components/form/Form";
+import React from "react";
 import Image from "../../components/Image/Image";
+import SignClient from "../SignClient/SignStudent";
+import Form2 from "../../components/form2/Form2";
 
-const LoginAdmin = () => {
+const SchoolReg = () => {
   return (
     <div className="flex h-screen bg-white px-10 py-5 justify-center items-center">
       <div className="main2 flex w-5/6 rounded-xl">
@@ -10,11 +11,11 @@ const LoginAdmin = () => {
           <Image />
         </div>
         <div className="right flex-1">
-        <Form isSignUp={false} isAdmin={false}/>
+          <Form2 isAdmin={false} isSignUp={true} />
         </div>
       </div>
     </div>
   );
 };
 
-export default LoginAdmin;
+export default SchoolReg;

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Button = () => {
   const [signUpBgColor, setSignUpBgColor] = useState('bg-gray-200');
@@ -20,13 +21,15 @@ const Button = () => {
         className={`signUp flex flex-1 items-center justify-center font-bold cursor-pointer rounded-lg shadow-cyan-500/50  ${signUpBgColor}`}
         onClick={handleSignUpClick}
       >
-        Sign Up
+      
+        <Link to="/register">  Sign Up</Link>
       </button>
       <button
         className={`login flex flex-1 items-center justify-center cursor-pointer rounded-lg font-bold shadow-cyan-500/50  ${loginBgColor}`}
         onClick={handleLoginClick}
       >
-        Login
+        <Link to="/login"> Login</Link>
+       
       </button>
     </div>
   );

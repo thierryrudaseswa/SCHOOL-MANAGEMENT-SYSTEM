@@ -10,6 +10,15 @@
   }
   
   .animated-image {
-    animation: fadeIn 6s ease-out infinite; /* Add 'infinite' for continuous animation */
+    animation: fadeIn 6s ease-out infinite; 
   }
-  
+
+  @media only screen and (max-width: 730px){
+    .mainPage{
+      padding: 4px;
+    }
+    .word{
+ font-size: small;
+    }
+   
+  }

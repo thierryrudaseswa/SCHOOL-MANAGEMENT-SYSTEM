@@ -8,11 +8,11 @@ const Events = () => {
       <div className="sidebar col-span-1">
         <SideBar />
       </div>
-      <div className="main col-span-4 bg-slate-900">
-        <div className="topbar h-12 bg-white flex ">
+      <div className="main col-span-4 bg-slate-200">
+        <div className="topbar h-16 bg-white flex ">
           <TopBar />
         </div>
-        <div className="mainpart max-h-full">
+        <div className="mainpart max-h-full bg-slate-200">
           <Main2 />
         </div>
       </div>

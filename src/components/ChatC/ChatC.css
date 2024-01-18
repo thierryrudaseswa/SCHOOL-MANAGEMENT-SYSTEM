@@ -5,13 +5,43 @@
     .par{
         font-size: xx-small;
         overflow-y: hidden;
-        background-color: aqua;
+       
         height: 20px;
     }
     .am{
         font-size: xx-small;
 
     }
+}
+@media only screen and (max-width:840px){
+  .am{
+    display: none;
+  }
+  .sms{
+    font-size: smaller !important;
+    background-color: aqua;
+  }
+  .editt{
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .edit{
+    height: 20px !important;
+    width: 20px !important;
+  }
+
+}
+@media only screen and (max-width:550px){
+
+  .div{
+    display: none;
+    max-width: 112px;
+    
+  }
+  .prof{
+    /* background-color: black; */
+    max-width: 400px;
+  }
 }
 
 

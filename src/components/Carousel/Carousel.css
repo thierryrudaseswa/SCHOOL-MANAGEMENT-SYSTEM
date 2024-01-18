@@ -1,0 +1,15 @@
+@media only screen and (max-width:627px){
+    
+    .ant{
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .car{
+        max-width: 400px;
+        font-size: small;
+    }
+
+}
