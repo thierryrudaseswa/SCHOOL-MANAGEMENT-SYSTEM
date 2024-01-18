@@ -19,6 +19,7 @@ const ThemeToggle = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
+  
 
   return (
     <div
