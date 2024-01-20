@@ -22,7 +22,7 @@ const FinancePa = () => {
         <SideBar />
       </div>
       <div className="main col-span-4 bg-slate-900">
-        <div className="topbar h-12 bg-white flex ">
+        <div className="topbar h-14 bg-white flex items-center ">
           <TopBar />
         </div>
         <div className="mainpart bg-slate-200 max-h-full p-10 max-tablet2:p-3">

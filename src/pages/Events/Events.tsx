@@ -9,7 +9,7 @@ const Events = () => {
         <SideBar />
       </div>
       <div className="main col-span-4 bg-slate-200">
-        <div className="topbar h-16 bg-white flex ">
+        <div className="topbar h-14 bg-white flex items-center">
           <TopBar />
         </div>
         <div className="mainpart max-h-full bg-slate-200">

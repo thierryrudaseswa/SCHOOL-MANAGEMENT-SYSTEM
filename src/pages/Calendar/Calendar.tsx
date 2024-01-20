@@ -21,7 +21,7 @@ const Calendar = () => {
         <SideBar />
       </div>
       <div className="main col-span-4 bg-slate-200">
-        <div className="topbar h-12 bg-white flex ">
+        <div className="topbar h-14 bg-white flex items-center ">
           <TopBar />
         </div>
         <div className="mainpart max-h-full bg-white rounded-lg flex justify-center items-center ml-10 mt-6" style={{width:"1300px"}}>
