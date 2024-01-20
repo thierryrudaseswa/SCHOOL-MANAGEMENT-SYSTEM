@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   return (
-    <div className="mainNav h-24 grid grid-cols-12">
+    <div className="mainNav h-24 grid grid-cols-12 ">
       <div className="lef col-span-3 flex items-center justify-center">
         <h1 className="text-lg font-bold h-12 text-white w-32 flex items-center justify-center ">LOGO</h1>
       </div>

@@ -19,10 +19,10 @@ const Main = () => {
     ["Friday", 950, 1200],
   ];
   return (
-    <div className="scroll lefright p-0 grid grid-cols-6  max-tablet2:block overflow-y-scroll" style={{height:"740px"}}>
-      <div className="left col-span-4 bg-white rounded-lg grid-rows-6 gap-y-96  ">
-        <div className="top flex bg-slate-200  gap-10 p-2.5 pl-8  row-span-1">
-          <div className="box h-44 text-white mt-1 w-64 rounded-lg  bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="scroll lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-slate-500  max-tablet2:block overflow-y-scroll" style={{height:"740px"}}>
+      <div className="left col-span-4 bg-slate-200 dark:bg-slate-500 rounded-lg grid-rows-6 gap-y-96  ">
+        <div className="top flex  gap-10 p-2.5 pl-8  row-span-1">
+          <div className="box h-44 text-white mt-1 w-64 rounded-lg  dark:bg-medium">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Revenue:</p>
@@ -72,12 +72,12 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="middlemain bg-slate-200   grid grid-cols-6  row-span-2 gap-4  ">
-          <div className="middlelef  col col-span-4  grid grid-rows-6 bg-white rounded-lg">
+        <div className="middlemain    grid grid-cols-6  row-span-2 gap-4  ">
+          <div className="middlelef  col col-span-4  grid grid-rows-6 bg-white dark:bg-medium rounded-lg">
             <div className="head row-span-1 flex items-center pl-5">
               <h1 className=" text-sm font-bold">Recent Activity</h1>
             </div>
-            <div className="text row-span-4  grid pl-2 gap-1 bg-white">
+            <div className="text row-span-4  grid pl-2 gap-1 bg-white dark:bg-medium">
               <div className="one h-7 grid grid-cols-6">
                 <p className=" col-span-1 flex justify-center">thie</p>
                 <p className=" col-span-4 text-xs flex items-center  font-semibold ">
@@ -119,7 +119,7 @@ const Main = () => {
               <p>activity</p>
             </div>
           </div>
-          <div className="middleright  col-span-2 p-2 bg-white rounded-lg">
+          <div className="middleright  col-span-2 p-2 bg-white dark:bg-medium rounded-lg">
             <div className="  h-70">
               {/* academic performance show */}
 
@@ -170,7 +170,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="bottom bg-slate-200  row-span-3 ">
+        <div className="bottom   row-span-3 ">
           <div className="botmain ">
             <div className="upperword grid grid-cols-6 ">
               <h1 className=" col-span-2  pl-5 font-bold flex items-center">
@@ -202,15 +202,15 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="right col-span-2 p-3 grid grid-rows-3 bg-slate-200 rounded-lg  pr-5 ">
-        <div className="middlec row-span-1 h-72 rounded-xl bg-white">
+      <div className="right col-span-2 p-3 grid grid-rows-3 bg-slate-200 dark:bg-slate-500 dark:text-white rounded-lg  pr-5 ">
+        <div className="middlec row-span-1 h-72 rounded-xl bg-white dark:bg-medium dark:text-white">
           <BasicDateCalendar />
         </div>
-        <div className="topc row-span-1 h-60 bg-white rounded-xl grid-rows-6 p-3">
+        <div className="topc row-span-1 h-60 bg-white rounded-xl grid-rows-6 p-3 dark:bg-medium dark:text-white ">
           <Event2 />
         </div>
 
-        <div className="topc row-span-1 h-64 bg-white    rounded-xl grid-rows-6 p-3">
+        <div className="topc row-span-1 h-64 bg-white    rounded-xl grid-rows-6 p-3 dark:bg-medium dark:text-white">
           <Event />
         </div>
       </div>

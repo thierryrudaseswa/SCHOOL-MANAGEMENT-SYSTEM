@@ -1,6 +1,8 @@
+// ThemeToggle.tsx
+
 import { useEffect, useState } from "react";
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import { Brightness4 as Brightness4Icon } from '@mui/icons-material';
+import { WbSunny as WbSunnyIcon } from '@mui/icons-material';
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -15,23 +17,24 @@ const ThemeToggle = () => {
       document.documentElement.classList.add('dark');
       localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
-  
 
   return (
     <div
-      className="relative w-16 h-8 flex items-center dark:bg-gray-900 bg-teal-500 cursor-pointer rounded-full p-1"
+      className={`relative w-16 h-8 flex items-center ${
+        darkMode ? "dark:bg-gray-900 bg-slate-500 " : " bg-white"
+      } cursor-pointer rounded-full p-1`}
       onClick={() => setDarkMode(!darkMode)}
     >
-      <WbSunnyIcon className="text-white" fontSize="small" />
+      <Brightness4Icon className="text-white" fontSize="small" />
       <div
-        className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
+        className="absolute bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
       ></div>
-      <Brightness4Icon className="ml-auto text-yellow-400" fontSize="small" />
+      <WbSunnyIcon className="ml-auto text-yellow-400" fontSize="small" />
     </div>
   );
 };

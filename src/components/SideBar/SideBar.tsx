@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 const SideBar = () => {
   return (
-    <div className='mainSidebar ' style={{ backgroundColor: "#2B59FF"}}>
+    <div className='mainSidebar bg-blue-500 dark:bg-medium' >
       <div className="main2 grid h-screen border-r-2 p-2 "> 
         <div className="logo row-span-1 text-white flex justify-center">
           <Link to="/">

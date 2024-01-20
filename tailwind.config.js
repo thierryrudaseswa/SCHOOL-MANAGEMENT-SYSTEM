@@ -12,6 +12,10 @@ export default {
 
     },
     extend: {
+      colors:{
+     "dark":"#232A3C",
+     "medium":"#293245"
+      },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
       },

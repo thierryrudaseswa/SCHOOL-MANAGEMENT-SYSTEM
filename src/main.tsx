@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import { CssBaseline } from "@mui/material";
 import { StylesProvider } from "@mui/styles";
-import DarkModeToggle from "./DarkMode/useDarkSide.tsx";
 
 import App from "./App.tsx";
 import "./index.css";
@@ -16,10 +15,12 @@ root.render(
   <React.StrictMode>
     <StylesProvider injectFirst>
       <CssBaseline />
+      <div className="dark:bg-medium">
       <Router>
-      {/* <DarkModeToggle /> */}
+    
         <App />
       </Router>
+      </div>
     </StylesProvider>
   </React.StrictMode>
 );

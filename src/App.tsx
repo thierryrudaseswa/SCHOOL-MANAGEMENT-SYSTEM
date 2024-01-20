@@ -17,7 +17,7 @@ import SignStudent from "./pages/SignClient/SignStudent";
 
 function App() {
   return (
-    <>
+    <div>
  
       <Routes>
         <Route path="/" element={<LandPage />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path="/financePa2" element={<FinancePa2 />} />
         <Route path="/financePa" element={<FinancePa />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
