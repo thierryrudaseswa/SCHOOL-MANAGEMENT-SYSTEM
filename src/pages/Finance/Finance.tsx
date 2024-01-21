@@ -18,9 +18,7 @@ const InvoiceGrid = ({ columns, rows, darkMode = false }: Props) => {
       getRowId={(row) => row.id}
       getRowClassName={(params) => (darkMode ? 'dark-mode-row' : '#808080')}
       sx={{
-        "& .header-name": {
-          color: darkMode ? 'black' : '#808080', // apply the color #808080 to the name header when dark mode is false
-        },
+       
         "& .MuiDataGrid-root": {
           border: "none",
         },
@@ -32,6 +30,7 @@ const InvoiceGrid = ({ columns, rows, darkMode = false }: Props) => {
         },
         "& .MuiDataGrid-virtualScroller": {
           "@apply bg-gray-200": "",
+          
         },
         "& .MuiDataGrid-footerContainer": {
           "@apply bg-blue-700": "",
