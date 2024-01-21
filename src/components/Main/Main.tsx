@@ -19,17 +19,17 @@ const Main = () => {
     ["Friday", 950, 1200],
   ];
   return (
-    <div className="scroll lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-slate-500  max-tablet2:block overflow-y-scroll" style={{height:"740px"}}>
-      <div className="left col-span-4 bg-slate-200 dark:bg-slate-500 rounded-lg grid-rows-6 gap-y-96  ">
+    <div className="scroll lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-darklight   max-tablet2:block overflow-y-scroll" style={{height:"740px"}}>
+      <div className="left col-span-4 bg-white   dark:bg-darklight dark:text-white rounded-lg grid-rows-6 gap-y-96  ">
         <div className="top flex  gap-10 p-2.5 pl-8  row-span-1">
-          <div className="box h-44 text-white mt-1 w-64 rounded-lg  dark:bg-medium">
+          <div className="box h-44  mt-1 w-64 rounded-lg  dark:bg-dark">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Revenue:</p>
                 <img src={message} alt="" className="" />
               </div>
               <div className="middlebox row-span-1">
-                <h1 className="p-0 font-extrabold text-sm text-slate-200">
+                <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
@@ -38,14 +38,14 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className="box h-44 text-white mt-1 w-64 rounded-lg  bg-gradient-to-r from-cyan-500 to-blue-500">
+          <div className="box h-44  mt-1 w-64 rounded-lg dark:bg-dark dark:text-white ">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Expenses:</p>
                 <img src={message} alt="" className="" />
               </div>
               <div className="middlebox row-span-1">
-                <h1 className="p-0 font-extrabold text-sm text-slate-200">
+                <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
@@ -54,14 +54,14 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div className="box h-44 text-white mt-1 w-64 rounded-lg  bg-gradient-to-r from-cyan-500 to-blue-500">
+          <div className="box h-44  mt-1 w-64 rounded-lg dark:bg-dark  ">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold">OutStanding balance:</p>
                 <img src={message} alt="" className="" />
               </div>
               <div className="middlebox row-span-1">
-                <h1 className="p-0 font-extrabold text-sm text-slate-200">
+                <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
@@ -73,11 +73,11 @@ const Main = () => {
         </div>
 
         <div className="middlemain    grid grid-cols-6  row-span-2 gap-4  ">
-          <div className="middlelef  col col-span-4  grid grid-rows-6 bg-white dark:bg-medium rounded-lg">
+          <div className="middlelef  col col-span-4  grid grid-rows-6 bg-white dark:bg-dark rounded-lg">
             <div className="head row-span-1 flex items-center pl-5">
               <h1 className=" text-sm font-bold">Recent Activity</h1>
             </div>
-            <div className="text row-span-4  grid pl-2 gap-1 bg-white dark:bg-medium">
+            <div className="text row-span-4  grid pl-2 gap-1 bg-white dark:bg-dark dark:text-white">
               <div className="one h-7 grid grid-cols-6">
                 <p className=" col-span-1 flex justify-center">thie</p>
                 <p className=" col-span-4 text-xs flex items-center  font-semibold ">
@@ -119,7 +119,7 @@ const Main = () => {
               <p>activity</p>
             </div>
           </div>
-          <div className="middleright  col-span-2 p-2 bg-white dark:bg-medium rounded-lg">
+          <div className="middleright  col-span-2 p-2 bg-white dark:bg-dark dark:text-white rounded-lg">
             <div className="  h-70">
               {/* academic performance show */}
 
@@ -202,15 +202,15 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="right col-span-2 p-3 grid grid-rows-3 bg-slate-200 dark:bg-slate-500 dark:text-white rounded-lg  pr-5 ">
-        <div className="middlec row-span-1 h-72 rounded-xl bg-white dark:bg-medium dark:text-white">
+      <div className="right col-span-2 p-3 grid grid-rows-3 bg-slate-200 dark:bg-darklight dark:text-white rounded-lg  pr-5 ">
+        <div className="middlec row-span-1 h-72 rounded-xl bg-white dark:bg-dark dark:text-white">
           <BasicDateCalendar />
         </div>
-        <div className="topc row-span-1 h-60 bg-white rounded-xl grid-rows-6 p-3 dark:bg-medium dark:text-white ">
+        <div className="topc row-span-1 h-60 bg-white rounded-xl grid-rows-6 p-3 dark:bg-dark dark:text-white ">
           <Event2 />
         </div>
 
-        <div className="topc row-span-1 h-64 bg-white    rounded-xl grid-rows-6 p-3 dark:bg-medium dark:text-white">
+        <div className="topc row-span-1 h-64 bg-white    rounded-xl grid-rows-6 p-3 dark:bg-dark dark:text-white">
           <Event />
         </div>
       </div>

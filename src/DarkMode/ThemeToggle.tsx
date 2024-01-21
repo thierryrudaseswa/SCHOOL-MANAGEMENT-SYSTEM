@@ -25,7 +25,7 @@ const ThemeToggle = () => {
   return (
     <div
       className={`relative w-16 h-8 flex items-center ${
-        darkMode ? "dark:bg-gray-900 bg-slate-500 " : " bg-white"
+        darkMode ? " bg-slate-900" : " bg-blue-500" 
       } cursor-pointer rounded-full p-1`}
       onClick={() => setDarkMode(!darkMode)}
     >

@@ -62,14 +62,14 @@ const Chatc = () => {
   };
 
   return (
-    <div className=" grid-cols-12 grid rounded-3xl" style={{ height: "750px" }}>
+    <div className=" grid-cols-12 grid rounded-3xl dark:bg-dark" style={{ height: "750px" }}>
       <div
         className="left col-span-4  border-r-2 border-slate-400"
         style={{ height: "730px" }}
       >
         <div
           className="top h-24  p-5
-           flex items-center justify-between bg-white"
+           flex items-center justify-between bg-white dark:bg-dark dark:text-white rounded-lg"
         >
           <p className="sms  font-extrabold text-2xl">Messages</p>
           <div
@@ -109,7 +109,7 @@ const Chatc = () => {
               <input
                 type="search"
                 id="default-search"
-                className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:bg-darklight focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search Mockups, Logos..."
                 required
               />
@@ -127,7 +127,7 @@ const Chatc = () => {
           className="scroll p-3 overflow-y-scroll"
           style={{ height: "575px", scrollbarColor: "#4A5568 #1A202C" }}
         >
-          <div className="div h-16 bg-slate-200 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 cursor-pointer">
+          <div className="div h-16 bg-slate-200 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -140,7 +140,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -153,7 +153,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 active:bg-blue-100 cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 active:bg-blue-100 cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -166,7 +166,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className=" all  h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
+          <div className=" all  h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -179,7 +179,7 @@ const Chatc = () => {
               <p className=" text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
             <img src={prof} alt="" className="prof file:col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -192,7 +192,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -205,7 +205,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -218,7 +218,7 @@ const Chatc = () => {
               <p className="am text-xs">7:00 AM</p>
             </div>
           </div>
-          <div className="div h-16 bg-slate-50 mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
+          <div className="div h-16 bg-slate-50 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200  cursor-pointer">
             <img src={prof} alt="" className="prof col-span-2" />
             <div className="div col-span-8">
               <h2 className="nam text-sm font-extrabold">Thierry Rudaseswa</h2>
@@ -234,44 +234,44 @@ const Chatc = () => {
         </div>
       </div>
 
-      <div className="right col-span-8  ">
-        <div className="top flex h-20  items-center justify-between pr-5 pl-5 bg-white">
+      <div className="right col-span-8 dark:bg-dark">
+        <div className="top flex h-20  items-center justify-between pr-5 pl-5 bg-white  dark:bg-dark dark:text-white">
           <div className="pro flex items-center gap-3 ">
             <img src={prof} alt="" />
             <div className="name text-sm font-bold">RUDASESWA Thierry</div>
           </div>
-          <div className=" h-8 w-8 rounded-full cursor-pointer bg-white flex items-center justify-center hover:bg-slate-200">
+          <div className=" h-8 w-8 rounded-full cursor-pointer bg-white dark:bg-darklight flex items-center justify-center hover:bg-slate-200">
             <img src={three} alt="" />
           </div>
         </div>
 
         <div
-          className="scroll midd gap-2 overflow-y-scroll"
+          className="scroll midd gap-2 overflow-y-scroll dark:bg-dark dark:text-white"
           style={{ height: "600px", scrollbarColor: "#4A5568 ,#1A202C" }}
         >
           <div className="  flex items-center justify-center font-bold">
             Today
           </div>
 
-          <div className="friend bg-slate-50 mb-1 flex items-center justify-start">
+          <div className="friend bg-slate-50 dark:bg-dark dark:text-white mb-1 flex items-center justify-start">
             <Mess />
           </div>
-          <div className="user bg-slate-50 mb-1 flex items-center justify-end">
+          <div className="user bg-slate-50 dark:bg-dark dark:text-white mb-1 flex items-center justify-end">
             <Mess />
           </div>
-          <div className="friend bg-slate-50 mb-1 flex items-center justify-start">
+          <div className="friend bg-slate-50 dark:bg-dark dark:text-white mb-1 flex items-center justify-start">
             <Mess />
           </div>
-          <div className="user bg-slate-50 mb-1 flex items-center justify-start">
+          <div className="user bg-slate-50 dark:bg-dark dark:text-white mb-1 flex items-center justify-start">
             <Sound />
           </div>
-          <div className="user bg-slate-50 mb-1 flex items-center justify-start">
+          <div className="user bg-slate-50 dark:bg-dark dark:text-white mb-1 flex items-center justify-start">
             <ImageD />
           </div>
         </div>
 
-        <div className="send flex items-center h-20 pl-2 pr-3 rounded-2xl">
-          <div className="send2 h-14 grid grid-cols-12 bg-white  rounded-2xl">
+        <div className="send flex items-center h-16 pl-2 pr-3 rounded-2xl">
+          <div className="send2 h-14 grid grid-cols-12 bg-white dark:bg-dark dark:text-white  rounded-2xl">
             <div className="speak col-span-1 flex items-center justify-center">
               <img src={speaker} alt="" className=" cursor-pointer" onClick={toggleRecordingControls} />
               <div>
@@ -298,7 +298,7 @@ const Chatc = () => {
               <input
                 type="text"
                 placeholder="Message @john thiery"
-                className="input h-8 border-none overflow-y-scroll overflow-scroll"
+                className="input h-14 border-none overflow-y-scroll rounded-full flex items-center p-4 overflow-scroll dark:bg-darklight dark:text-white"
                 style={{ width: "900px" }}
               />
             </div>

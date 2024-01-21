@@ -1,27 +1,27 @@
-import React from 'react'
+
 
 const DocGen2 = () => {
   return (
-    <div className='maind bg-white rounded-3xl p-4'>
+    <div className='maind bg-white dark:bg-dark dark:text-white rounded-3xl p-4'>
 
-        <div className="headD h-24 flex items-center justify-center text-2xl font-bold text-black">
+        <div className="headD h-24 flex items-center justify-center text-2xl font-bold text-black dark:text-white">
             Generate Document
         </div>
         <div className="midD h-96 p-5 ">
         <div className="mb-5">
-      <label htmlFor="large-input" className="block mb-2 text-sm font-bold text-black">Full Name</label>
-      <input type="text" id="large-input" className="block w-full p-4 text-black border border-gray-300 rounded-lg sm:text-md focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" style={{background:"#FAFAFA"}} placeholder='Enter full Name'/>
+      <label htmlFor="large-input" className="block mb-2 text-sm font-bold text-black dark:text-white ">Full Name</label>
+      <input type="text" id="large-input" className="block w-full p-4 text-black border border-gray-300 rounded-lg dark:bg-darklight sm:text-md focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"  placeholder='Enter full Name'/>
   </div>
             
 <div className="mb-5">
-  <label className="block mb-2 text-sm font-bold text-black" htmlFor="user_avatar">Upload file</label>
-  <input className="block w-full p-4  border border-gray-300 rounded-lg  sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" type="file" style={{background:"#FAFAFA"}}/>
-  <div className="mt-1 text-sm  text-black" id="user_avatar_help">A document to be uploaded </div>
+  <label className="block mb-2 text-sm font-bold dark:bg-darklight text-black dark:text-white" htmlFor="user_avatar">Upload file</label>
+  <input className="block w-full p-4  border border-gray-300 rounded-lg  sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400  text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" type="file" style={{background:""}}/>
+  <div className="mt-1 text-sm  text-black dark:text-white" id="user_avatar_help">A document to be uploaded </div>
 </div>
 
 <div className="mb-5">
-  <label htmlFor="countries" className="block mb-2 text-sm font-bold text-black">Year</label>
-  <select id="countries" className="block w-full p-4 text-black border border-gray-300 rounded-lg  sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 cursor-pointer" style={{background:"#FAFAFA"}}>
+  <label htmlFor="countries" className="block mb-2 text-sm font-bold text-black dark:text-white">Year</label>
+  <select id="countries" className="block w-full p-4 text-black border dark:bg-darklight dark:text-white border-gray-300 rounded-lg  sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 cursor-pointer" style={{background:"#"}}>
 
     <option>2023</option>
     <option>2022</option>

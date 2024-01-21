@@ -5,15 +5,10 @@ import ThemeToggle from "../../DarkMode/ThemeToggle";
 
 const TopBar: React.FC = () => {
   return (
-    <div className=" grid grid-cols-6  w-full dark:bg-medium">
+    <div className=" grid grid-cols-6  w-full dark:bg-dark">
       <div className="lefttop col-span-4 flex items-center p-2">
         <form>
-          <label
-            htmlFor="default-search"
-            className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-          >
-            Search
-          </label>
+         
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
@@ -35,10 +30,10 @@ const TopBar: React.FC = () => {
             <input
               type="search"
               id="default-search"
-              className="inputtop rounded-2xl block w-72 p-4 ps-10 text-sm h-10 "
+              className="inputtop rounded-2xl bg-slate-200 dark:bg-darklight  block w-72 p-4 ps-10 text-sm h-10 "
               placeholder="Search Mockups, Logos..."
               required
-              style={{ background: "#FAFAFA" }}
+              style={{ background: "0A0A0" }}
             />
           </div>
         </form>
@@ -52,7 +47,7 @@ const TopBar: React.FC = () => {
           />
         </div>
 
-        <div className="prof bg-slate-400  col-span-3 h-9 flex items-center justify-between pr-2">
+        <div className="prof col-span-3 h-9 flex items-center justify-between pr-2">
         <ThemeToggle />
         <div className=" flex ">
         <img

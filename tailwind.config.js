@@ -13,7 +13,8 @@ export default {
     },
     extend: {
       colors:{
-     "dark":"#232A3C",
+     "darklight":"#0A0A0A",
+     "dark":"#000000",
      "medium":"#293245"
       },
       fontFamily: {

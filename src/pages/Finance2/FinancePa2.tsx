@@ -13,7 +13,7 @@ const columns = [
   { field: "remaining", headerName: "Remaining", flex: 1 },
 
  
-  // ... Add other columns as needed
+
 ];
 
 const FinancePa2 = () => {

@@ -9,11 +9,11 @@ const DashBoard = () => {
       <div className="sidebar col-span-1 bg-slate-200">
         <SideBar />
       </div>
-      <div className="main col-span-4  bg-slate-200">
-        <div className="topbar h-14  flex items-center bg-white">
+      <div className="main col-span-4 bg-slate-200 dark:bg-darklight">
+        <div className="topbar h-14 flex items-center bg-white">
           <TopBar />
         </div>
-        <div className="mainpart max-h-full mt-5 ml-5 rounded-xl ">
+        <div className="mainpart max-h-full mt-5  ml-5 rounded-xl dark:bg-darklight">
           {/* <ThemeToggle /> */}
           <Main />
         </div>

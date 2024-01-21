@@ -35,7 +35,16 @@ interface FeeData extends BaseInvoice {
 const FeeData: FeeData[] = [
   {
     id: 23,
-    name: "Thierry",
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
     gender: "M",
     paid: 300,
     remaining: 4900,
