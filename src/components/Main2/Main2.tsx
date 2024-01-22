@@ -19,7 +19,7 @@ const Main2 = () => {
  
   return (
     <div className="lefright p-4 grid max-h-screen gap-6 grid-cols-6 max-tablet2:block dark:bg-darklight ">
-      <div className="scroll overflow-y-scroll left col-span-4  bg-white mt-3 overflow-scroll ml-4 rounded-t-xl ">
+      <div className=" left col-span-4  bg-white mt-3 dark:bg-darklight dark:text-white ml-4 rounded-t-xl ">
       <div className="head h-20 flex justify-center items-center font-extrabold text-2xl">
            Events
             </div>

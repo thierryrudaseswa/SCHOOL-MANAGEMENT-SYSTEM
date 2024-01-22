@@ -44,7 +44,7 @@ const Finance = () => {
           <div className="topbar h-14 bg-white flex  items-center">
             <TopBar />
           </div>
-          <div className=" scroll overflow-y-scroll mainpart bg-slate-200 dark:bg-darklight max-h-full p-10 max-tablet2:p-3" style={{height:"772px"}}>
+          <div className=" scroll overflow-y-scrol mainpart bg-slate-200 dark:bg-darklight max-h-full p-10 max-tablet2:p-3" style={{height:"856px"}}>
             <div className="mainp2 bg-white dark:bg-dark dark:text-white rounded-2xl">
               <div className="head h-20 flex justify-center items-center font-extrabold text-2xl">
                 SCHOOL FEES

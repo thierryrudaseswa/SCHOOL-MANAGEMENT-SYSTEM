@@ -10,7 +10,7 @@ const Finance3 = () => {
       <div className="sidebar col-span-1">
         <SideBar />
       </div>
-      <div className="main col-span-4 bg-slate-100">
+      <div className="main col-span-4 bg-slate-100 dark:bg-darklight">
         <div className="topbar h-14 bg-white flex items-center ">
           <TopBar />
         </div>

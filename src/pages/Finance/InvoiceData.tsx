@@ -123,6 +123,69 @@ const FeeData: FeeData[] = [
     email: "trudaswa@gmail.com",
   
   },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
+  {
+    id: 23,
+    name: "Thierrye",
+    gender: "M",
+    paid: 300,
+    remaining: 4900,
+    email: "trudaswa@gmail.com",
+  
+  },
   
 ];
 

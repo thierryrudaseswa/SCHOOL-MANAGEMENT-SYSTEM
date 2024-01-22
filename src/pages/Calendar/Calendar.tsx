@@ -24,7 +24,7 @@ const Calendar = () => {
         <div className="topbar h-14 bg-white flex items-center ">
           <TopBar />
         </div>
-        <div className="mainpart max-h-full bg-white rounded-lg flex justify-center items-center ml-10 mt-6" style={{width:"1300px"}}>
+        <div className="mainpart max-h-full bg-white dark:bg-dark dark:text-white rounded-lg flex justify-center items-center ml-10 mt-6" style={{width:"1300px",height:"820px"}}>
           <MyCalendar initialEvents={initialEvents} />
         </div>
       </div>

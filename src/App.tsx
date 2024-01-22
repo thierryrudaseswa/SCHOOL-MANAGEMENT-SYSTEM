@@ -29,7 +29,7 @@ function App() {
         <Route path="/loginUser" element={<LoginClient />} />
 
         <Route path="/dashboard" element={<DashBoard />} />
-        {/* <Route path="/calendar" element={<Calendar />} /> */}
+        <Route path="/calendar" element={<Calendar />} />
 
         <Route path="/chat" element={<Chat />} />
         <Route path="/document" element={<Document />} />
