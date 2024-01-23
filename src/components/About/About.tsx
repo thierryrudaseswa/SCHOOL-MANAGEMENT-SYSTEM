@@ -15,8 +15,9 @@ const About = () => {
         <div className="mainPart col-span-4 pr-20 font-semibold gap-2 mb-2">
             <div className="text  p-20">SMS is a digital platform that helps educational institutions efficiently manage student data, academic records, attendance, communication, and administrative tasks. It streamlines operations, enhances communication between teachers, parents, and students, and provides easy access to essential information for improved educational management</div>
                
-            <div className="box p-20 mt-10 flex flex-wrap gap-20">
-                <div className=" w-28 grid grid-flow-row items-center justify-center bg-white">
+            <div className="boxs p-10  mt-10 flex flex-wrap gap-24">
+                <div className="boxxs w-28 grid grid-flow-row items-center justify-center bg-white">
+
                   <div className="  flex justify-center">  <img src={dollar} alt="" className=' h-16 ' /></div>
                     <p className=' flex justify-center'>Financial</p>
                     <p>management</p>

@@ -2,36 +2,32 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Button = () => {
-  const [signUpBgColor, setSignUpBgColor] = useState('bg-gray-200');
-  const [loginBgColor, setLoginBgColor] = useState('bg-gray-200');
+  const [activeButton, setActiveButton] = useState(null);
 
-  const handleSignUpClick = () => {
-    setSignUpBgColor('bg-white');
-    setLoginBgColor('bg-gray-200');
-  };
-
-  const handleLoginClick = () => {
-    setLoginBgColor('bg-white');
-    setSignUpBgColor('bg-gray-200');
+  const handleButtonClick = (button:any) => {
+    setActiveButton(button);
   };
 
   return (
-    <div className='w-72 flex h-14 p-2 m-2 space-x-1 rounded-lg bg-gray-200'>
-      <button
-        className={`signUp flex flex-1 items-center justify-center font-bold cursor-pointer rounded-lg shadow-cyan-500/50  ${signUpBgColor}`}
-        onClick={handleSignUpClick}
+    <div className='w-72 flex h-14 p-2 m-2 space-x-1 rounded-lg' style={{ backgroundColor: "#EEEEEE" }}>
+      <div
+        className={`flex flex-1 items-center justify-center font-bold cursor-pointer rounded-lg shadow-cyan-500/50 ${
+          activeButton === 'signUp' ? 'bg-white' : ''
+        }`}
+        onClick={() => handleButtonClick('signUp')}
       >
-      
-        <Link to="/register">  Sign Up</Link>
-      </button>
-      <button
-        className={`login flex flex-1 items-center justify-center cursor-pointer rounded-lg font-bold shadow-cyan-500/50  ${loginBgColor}`}
-        onClick={handleLoginClick}
+        <Link to="/register">Sign Up</Link>
+      </div>
+      <div
+        className={`flex flex-1 items-center justify-center cursor-pointer rounded-lg font-bold shadow-cyan-500/50 ${
+          activeButton === 'login' ? 'bg-white' : ''
+        }`}
+        onClick={() => handleButtonClick('login')}
       >
-        <Link to="/login"> Login</Link>
-       
-      </button>
+        <Link to="/login">Login</Link>
+      </div>
     </div>
   );
 };
+
 export default Button;

@@ -3,7 +3,7 @@ import schoosign from "../../assets/images/schoolSign.svg";
 
 const Image = () => {
   return (
-    <div className="p-10">
+    <div className="p-10 rounded-r-xl">
           <div className=" h-24 text-xl font-bold text-white">
             LOGO
           </div>

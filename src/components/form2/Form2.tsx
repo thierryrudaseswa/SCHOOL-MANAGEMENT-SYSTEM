@@ -1,5 +1,6 @@
 import { Checkbox, FormControlLabel } from '@mui/material';
-import Button from "../button/Button"
+import Button from "../button/Button";
+import "./Form.css"
 import {Link} from "react-router-dom"
 interface Props{
   isSignUp:boolean;
@@ -9,8 +10,8 @@ interface Props{
 const Form2:React.FC<Props> = ({isSignUp,isAdmin}) => {
   return (
     <div className="p-0   flex pl-9 ">
-      <div className="flex rounded-x justify-center px-6 PY-4 lg:px-8" style={{height:"670px", width:"500px"}}>
-  <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="flex rounded-x justify-center px-6 PY-4 lg:px-8" style={{height:"670px"}}>
+  <div className="mt-10  ">
     <form className="space-y-2  " action="#" method="POST">
 <div className="headText h-16">
   <h2 className='flex w-full justify-center px-3 py-1.5 text-2xl font-bold tracking-normal leading-6  shadow-sm' style={{color:'#3E3E3E'}}>Get Started now</h2>
@@ -31,7 +32,7 @@ const Form2:React.FC<Props> = ({isSignUp,isAdmin}) => {
 
         <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email address</label>
         <div className="mt-2">
-          <input id="email" name="email" type="email" placeholder='Enter school email' autoComplete="email" required className="block  h-14 rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:"450px"}}/>
+          <input id="email" name="email" type="email" placeholder='Enter school email' autoComplete="email" required className="block  h-14 w-full rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:""}}/>
         </div>
       </div>
 
@@ -43,7 +44,7 @@ const Form2:React.FC<Props> = ({isSignUp,isAdmin}) => {
           </div>
         </div>
         <div className="mt-2">
-          <input id="password" name="password" placeholder='password' type="password" autoComplete="current-password" required className="block w-96 h-14 rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:"450px"}}/>
+          <input id="password" name="password" placeholder='password' type="password" autoComplete="current-password" required className="block  h-14 w-full rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:""}}/>
         </div>
       </div>
     {isSignUp && (
@@ -52,7 +53,7 @@ const Form2:React.FC<Props> = ({isSignUp,isAdmin}) => {
           <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Confirm password</label>
         </div>
         <div className="mt-2">
-          <input id="password" name="password" placeholder='confirm password' type="password" autoComplete="current-password" required className="block w-96 h-14 rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:"450px"}}/>
+          <input id="password" name="password" placeholder='confirm password' type="password" autoComplete="current-password" required className="block w-full h-14 rounded-lg border-0 py-1.5 px-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{width:""}}/>
         </div>
       </div>
     )}  

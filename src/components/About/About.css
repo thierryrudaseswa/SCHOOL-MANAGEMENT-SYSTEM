@@ -17,6 +17,7 @@
     font-weight: 600;
     margin-bottom: 2px;
   }
+ 
   
   @media only screen and (max-width: 998px) {
     .mainAbout {
@@ -39,5 +40,20 @@
     .text{
         padding: 20px !important;
     }
+  }
+
+  @media only screen and (max-width: 500px){
+    .boxs{
+     /* background-color: aqua; */
+     padding: 3px !important;
+     gap: 4px;
+     display: flex;
+    }
+    .boxxs{
+      
+      width: 16px;
+      border-radius: 20px;
+    }
+
   }
   

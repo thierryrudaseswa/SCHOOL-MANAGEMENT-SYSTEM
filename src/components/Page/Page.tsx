@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import schol from "../../assets/images/school.svg"; 
-import './Page.css'; // Import your CSS file
+import './Page.css'; 
 
 const TypewriterText: React.FC<{ text?: string; onAnimationComplete: () => void }> = ({ text = '', onAnimationComplete }) => {
   const [displayText, setDisplayText] = useState<string>('');
@@ -58,11 +58,11 @@ const Page: React.FC = () => {
     <div className='mainPage grid grid-cols-7'>
       <div className="word col-span-4 flex items-center justify-center" style={{ height: "88vh" }}>
         <div className="grid grid-cols-1 items-center justify-end gap-12" style={{ width: "780px" }}>
-          <h1 className='school text-white font-bold text-7xl'>
+          <h1 className='sd school text-white font-bold text-7xl'>
             <TypewriterText text="School Management System" onAnimationComplete={handleHeadingComplete} />
           </h1>
           {isHeadingComplete && (
-            <p className='text-white font-bold w-96'>
+            <p className=' text-white font-bold w-96'>
               <TypewriterText text="Easily Manage Your school anywhere anytime as fast as possible with our system" onAnimationComplete={restartAnimation} />
             </p>
           )}
