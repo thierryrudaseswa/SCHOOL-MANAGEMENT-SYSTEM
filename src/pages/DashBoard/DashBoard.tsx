@@ -5,15 +5,16 @@ import ThemeToggle from "../../DarkMode/ThemeToggle";
 
 const DashBoard = () => {
   return (
-    <div className="main grid grid-cols-5 h-screen">
-      <div className="sidebar col-span-1 bg-slate-200">
+    <div className="main3 grid grid-cols-5  w-full
+    ">
+      <div className="sidebar col-span-1 bg-slate-500">
         <SideBar />
       </div>
-      <div className="main col-span-4 bg-slate-200 dark:bg-darklight">
+      <div className="main col-span-4 bg-slate-200 dark:bg-darklight w-full ">
         <div className="topbar h-14 flex items-center bg-white">
           <TopBar />
         </div>
-        <div className="mainpart max-h-full mt-5  ml-5 rounded-xl dark:bg-darklight">
+        <div className="mainpart mt-5   rounded-x space-y-4  w-full">
           {/* <ThemeToggle /> */}
           <Main />
         </div>

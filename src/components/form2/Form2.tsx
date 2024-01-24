@@ -9,10 +9,10 @@ interface Props{
 
 const Form2:React.FC<Props> = ({isSignUp,isAdmin}) => {
   return (
-    <div className="p-0   flex pl-9 ">
-      <div className="flex rounded-x justify-center px-6 PY-4 lg:px-8" style={{height:"670px"}}>
-  <div className="mt-10  ">
-    <form className="space-y-2  " action="#" method="POST">
+    <div className="flex  w-full pl-7 b">
+      <div className="flex w-full b" style={{height:"670px",width:""}}>
+  <div className="mt-10  w-full pr-5">
+    <form className="space-y-2 w-full " action="#" method="POST">
 <div className="headText h-16">
   <h2 className='flex w-full justify-center px-3 py-1.5 text-2xl font-bold tracking-normal leading-6  shadow-sm' style={{color:'#3E3E3E'}}>Get Started now</h2>
 

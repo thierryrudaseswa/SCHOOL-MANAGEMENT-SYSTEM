@@ -1,11 +1,11 @@
 import "./Main.css";
 import message from "../../assets/images/messenger.png";
 import MaterialChart from "../graphs/Graph";
-import SmGraph from "../graphs/Smgraph";
 import Event from "../Event/Event";
 import BasicDateCalendar from "../Calendar/Calendar";
 import mess from "../../assets/images/messenger.png";
 import ApexChart from "../graphs/perfGraph";
+import GoogleLineChart from "../SmGraph/SmGraph";
 
 import Event2 from "../Event/Event2";
 
@@ -19,10 +19,10 @@ const Main = () => {
     ["Friday", 950, 1200],
   ];
   return (
-    <div className="scroll lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-darklight   max-tablet2:block overflow-y-scroll" style={{height:"740px"}}>
-      <div className="left col-span-4 bg-white   dark:bg-darklight dark:text-white rounded-lg grid-rows-6 gap-y-96  ">
+    <div className="scroll w-full lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-darklight   max-laptop:block overflow-y-scroll" style={{height:"740px"}}>
+      <div className="left space-y-12 col-span-4 bg-white   dark:bg-darklight dark:text-white rounded-xl grid-rows-6 ">
         <div className="top flex  gap-10 p-2.5 pl-8  row-span-1">
-          <div className="box h-44  mt-1 w-64 rounded-lg  dark:bg-dark">
+          <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Revenue:</p>
@@ -33,12 +33,12 @@ const Main = () => {
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4 bg-white  h-28">
-                <SmGraph />
+              <div className="graph row-span-4   flex items-center  p-3  h-28">
+                <GoogleLineChart />
               </div>
             </div>
           </div>
-          <div className="box h-44  mt-1 w-64 rounded-lg dark:bg-dark dark:text-white ">
+          <div className="box h-52 p-2   mt-1 w-80 rounded-xl dark:bg-dark dark:text-white ">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Expenses:</p>
@@ -49,15 +49,15 @@ const Main = () => {
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4 bg-white  h-28">
-                <SmGraph />
+              <div className="graph row-span-4 flex items-center p-3 h-28">
+              <GoogleLineChart />
               </div>
             </div>
           </div>
-          <div className="box h-44  mt-1 w-64 rounded-lg dark:bg-dark  ">
+          <div className="box h-52  mt-1 w-80 rounded-2xl p-2 dark:bg-dark dark:text-white ">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-3 flex justify-between">
-                <p className="p-0 text-sm font-bold">OutStanding balance:</p>
+                <p className="p-0 text-sm font-bold"> Expenses:</p>
                 <img src={message} alt="" className="" />
               </div>
               <div className="middlebox row-span-1">
@@ -65,14 +65,15 @@ const Main = () => {
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4 bg-white  h-28">
-                <SmGraph />
+              <div className="graph row-span-4  flex items-center p-3   h-28">
+              <GoogleLineChart />
               </div>
             </div>
           </div>
+          
         </div>
 
-        <div className="middlemain    grid grid-cols-6  row-span-2 gap-4  ">
+        <div className="middlemaina  grid grid-cols-6  row-span-2 gap-4  ">
           <div className="middlelef  col col-span-4  grid grid-rows-6 bg-white dark:bg-dark rounded-lg">
             <div className="head row-span-1 flex items-center pl-5">
               <h1 className=" text-sm font-bold">Recent Activity</h1>
@@ -202,7 +203,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="right col-span-2 p-3 grid grid-rows-3 bg-slate-200 dark:bg-darklight dark:text-white rounded-lg  pr-5 ">
+      <div className="right col-span-2 space-y-12 grid grid-rows-3 pl-4 bg-slate-200 dark:bg-darklight dark:text-white rounded-lg">
         <div className="middlec row-span-1 h-72 rounded-xl bg-white dark:bg-dark dark:text-white">
           <BasicDateCalendar />
         </div>

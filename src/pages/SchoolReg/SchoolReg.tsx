@@ -9,7 +9,7 @@ const SchoolReg = () => {
         <div className="left flex-1 rounded-l-xl" style={{ background: "#2B59FF" }}>
           <Image />
         </div>
-        <div className="right flex-1 bg-blac rounded-r-xl">
+        <div className="right flex-1 bg-blac bg-slate-200 rounded-r-xl">
           <Form2 isAdmin={false} isSignUp={true} />
         </div>
       </div>

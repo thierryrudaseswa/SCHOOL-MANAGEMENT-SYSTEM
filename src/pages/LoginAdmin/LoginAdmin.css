@@ -1,0 +1,10 @@
+@media only screen and (max-width:1300px){
+    .flexx{
+        padding: 2px  !important;
+        background: #000;
+
+    }
+    .mainlog{
+    width: max-content !important;
+    }
+}

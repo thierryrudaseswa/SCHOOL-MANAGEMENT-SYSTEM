@@ -11,9 +11,9 @@ const Form:React.FC<Props> = ({isSignUp,isAdmin}) => {
   return (
     <div className=" flex
      pl-9">
-      <div className="flex my-5 flex-col bg-white rounded-xl justify-center px-6 lg:px-8" style={{height:"670px", width:"500px"}}>
-  <div className="mt-10 ">
-    <form className="space-y-2  " action="#" method="POST">
+      <div className="flex my-5 flex-col w-full  rounded-xl justify-center px-6 lg:px-8" style={{height:"670px", width:""}}>
+  <div className="mt-10  ">
+    <form className="space-y-2  w-full " action="#" method="POST">
 <div className="headText h-16">
   <h2 className='flex w-full justify-center px-3 py-1.5 text-2xl font-bold tracking-normal leading-6  shadow-sm' style={{color:'#3E3E3E'}}>Get Started now</h2>
 
@@ -64,7 +64,7 @@ const Form:React.FC<Props> = ({isSignUp,isAdmin}) => {
       <FormControlLabel
   control={<Checkbox />}
   label=""
-  className='bg-white w-9'
+  className=' w-9'
 />
 <p className='flex gap-2 max-phone:text-xs'>
   <span className='text-black'>Agree to</span>
