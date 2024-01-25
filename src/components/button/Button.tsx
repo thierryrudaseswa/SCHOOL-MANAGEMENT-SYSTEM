@@ -9,7 +9,7 @@ const Button = () => {
   };
 
   return (
-    <div className='w-72 flex h-14 p-2 m-2 space-x-1 rounded-lg' style={{ backgroundColor: "#EEEEEE" }}>
+    <div className=' gap-0 w-72 flex h-14 p-2 m-2 space-x-1 rounded-lg' style={{ backgroundColor: "#EEEEEE" }}>
       <div
         className={`flex flex-1 items-center justify-center font-bold cursor-pointer rounded-lg shadow-cyan-500/50 ${
           activeButton === 'signUp' ? 'bg-white' : ''

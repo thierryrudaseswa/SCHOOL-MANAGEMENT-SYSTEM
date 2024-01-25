@@ -1,6 +1,3 @@
-/* .mainSidebar{
-    position: fixed;
-} */
 .logout{
   
     margin-top: 100px;
@@ -14,7 +11,7 @@
         }
     .menu p{
         font-size: xx-small;
-        color: aqua;
+
        
     }
 }

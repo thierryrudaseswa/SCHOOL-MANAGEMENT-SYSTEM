@@ -32,6 +32,7 @@
    .righ{
     padding: 0px !important;
     flex: 2 !important;
+    padding: 0px;
    }
 
 }

@@ -1,7 +1,7 @@
 import SideBar from "../../components/SideBar/SideBar";
 import TopBar from "../../components/TopBar/TopBar";
 import Main from "../../components/Main/Main";
-import ThemeToggle from "../../DarkMode/ThemeToggle";
+// import ThemeToggle from "../../DarkMode/ThemeToggle";
 
 const DashBoard = () => {
   return (
@@ -15,7 +15,7 @@ const DashBoard = () => {
           <TopBar />
         </div>
         <div className="mainpart mt-5   rounded-x space-y-4  w-full">
-          {/* <ThemeToggle /> */}
+          {/* <ThemeToggle />/ */}
           <Main />
         </div>
       </div>

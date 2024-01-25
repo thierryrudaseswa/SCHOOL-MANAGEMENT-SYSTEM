@@ -44,7 +44,7 @@
 
   @media only screen and (max-width: 500px){
     .boxs{
-     /* background-color: aqua; */
+  
      padding: 3px !important;
      gap: 4px;
      display: flex;

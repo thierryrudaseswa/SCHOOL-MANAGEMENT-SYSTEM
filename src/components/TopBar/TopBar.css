@@ -1,6 +1,6 @@
 @media only screen and (max-width:570px){
     .mainTopbar{
-        background-color: black;
+        /* background-color: black; */
         display: flex;
     }
 .righttop{
@@ -11,7 +11,8 @@ flex: 6;
 .lefttop{
     flex: 1;
    max-width: 400px;
-   background-color: blue;}
+   /* background-color: blue; */
+}
 .inputtop{
  max-width: 160px;   
 }
