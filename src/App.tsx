@@ -4,7 +4,7 @@ import LoginClient from "./pages/LoginClient/LoginClient";
 import LoginAdmin from "./pages/LoginAdmin/LoginAdmin";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import Calendar from "./pages/Calendar/Calendar";
-import Chat from "./pages/Chat/Chat.tsx";
+import Chat from "./pages/Chat/Chat";
 import Document from "./pages/Document/Document";
 import Events from "./pages/Events/Events";
 import Finance3 from "./pages/Finance3/Finance3";
@@ -17,7 +17,7 @@ import SignStudent from "./pages/SignClient/SignStudent";
 
 function App() {
   return (
-    <div>
+    <>
  
       <Routes>
         <Route path="/" element={<LandPage />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path="/financePa2" element={<FinancePa2 />} />
         <Route path="/financePa" element={<FinancePa />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -17,7 +17,6 @@ root.render(
       <CssBaseline />
       <div className="dark:bg-medium">
       <Router>
-    
         <App />
       </Router>
       </div>
