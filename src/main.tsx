@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { CssBaseline } from "@mui/material";
 import { StylesProvider } from "@mui/styles";
 
-import App from "./App.tsx";
+import App from "./App";
 import "./index.css";
 
 const rootElement = document.getElementById("root")!;

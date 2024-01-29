@@ -58,6 +58,9 @@
 
     }
     .box{
+        .graph{
+            height: 90px;
+        }
         
     }
     .middlemaina{
@@ -75,11 +78,6 @@
     .top{
         max-width: 600px;
     }
-
-    .box{
-        
-         }
-
     .middlemaina{
         max-width: 600px;
     }
@@ -110,7 +108,10 @@
        }
      .box{
            max-width: 180px;
-         
+            }
+            .rev{
+                width: 16px !important;
+                height: 22px !important;
             }
     .middlemaina{
            max-width: 500px;
@@ -158,6 +159,9 @@
 @media only screen and (max-width: 500px){
     .mai{
         width: max-content;
+    }
+    .top{
+ 
     }
 
     .middlemaina{

@@ -6,6 +6,8 @@ import BasicDateCalendar from "../Calendar/Calendar";
 import mess from "../../assets/images/messenger.png";
 import ApexChart from "../graphs/perfGraph";
 import GoogleLineChart from "../SmGraph/SmGraph";
+import React, { useEffect } from 'react';
+
 
 import Event2 from "../Event/Event2";
 
@@ -19,57 +21,60 @@ const Main = () => {
     ["Friday", 950, 1200],
   ];
   return (
+    <>
     <div className="scroll w-full lefright p-0 grid grid-cols-6 bg-slate-200 dark:bg-darklight   max-laptop:block overflow-y-scroll" style={{height:"740px"}}>
       <div className="left space-y-12 col-span-4 bg-white   dark:bg-darklight dark:text-white rounded-xl grid-rows-6 ">
         <div className="top flex  gap-10 p-2.5 pl-8  row-span-1">
-          <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark">
+          <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark bg-amber-900">
             <div className="box2 grid grid-rows-8 p-2">
-              <div className="topbox row-span-3 flex justify-between">
+              <div className="topbox row-span-1 flex justify-between">
                 <p className="p-0 text-sm font-bold"> Revenue:</p>
-                <img src={message} alt="" className="" />
+                <img src={message} alt="" className="rev h-8 w-7" />
               </div>
               <div className="middlebox row-span-1">
                 <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4   flex items-center  p-3  h-28">
+              <div className="graph row-span-6  bg-orange-700 flex  h-32">
                 <GoogleLineChart />
               </div>
             </div>
           </div>
-          <div className="box h-52 p-2   mt-1 w-80 rounded-xl dark:bg-dark dark:text-white ">
+        
+          <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark bg-amber-900">
             <div className="box2 grid grid-rows-8 p-2">
-              <div className="topbox row-span-3 flex justify-between">
-                <p className="p-0 text-sm font-bold"> Expenses:</p>
-                <img src={message} alt="" className="" />
+              <div className="topbox row-span-1 flex justify-between">
+                <p className="p-0 text-sm font-bold"> Revenue:</p>
+                <img src={message} alt="" className="rev  h-8 w-7" />
               </div>
               <div className="middlebox row-span-1">
                 <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4 flex items-center p-3 h-28">
-              <GoogleLineChart />
+              <div className="graph row-span-6  bg-orange-700 flex  h-32">
+                <GoogleLineChart />
               </div>
             </div>
           </div>
-          <div className="box h-52  mt-1 w-80 rounded-2xl p-2 dark:bg-dark dark:text-white ">
+          <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark bg-amber-900">
             <div className="box2 grid grid-rows-8 p-2">
-              <div className="topbox row-span-3 flex justify-between">
-                <p className="p-0 text-sm font-bold"> Expenses:</p>
-                <img src={message} alt="" className="" />
+              <div className="topbox row-span-1 flex justify-between">
+                <p className="p-0 text-sm font-bold"> Revenue:</p>
+                <img src={message} alt="" className="rev h-8 w-7" />
               </div>
               <div className="middlebox row-span-1">
                 <h1 className="p-0 font-extrabold text-sm text-slate-600">
                   $3000
                 </h1>
               </div>
-              <div className="graph row-span-4  flex items-center p-3   h-28">
-              <GoogleLineChart />
+              <div className="graph row-span-6  bg-orange-700 flex  h-32">
+                <GoogleLineChart />
               </div>
             </div>
           </div>
+          
           
         </div>
 
@@ -216,6 +221,7 @@ const Main = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
