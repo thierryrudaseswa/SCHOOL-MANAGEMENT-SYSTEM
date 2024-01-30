@@ -9,6 +9,7 @@ import GoogleLineChart from "../SmGraph/SmGraph";
 import React, { useEffect } from 'react';
 
 
+
 import Event2 from "../Event/Event2";
 
 const Main = () => {
@@ -28,7 +29,7 @@ const Main = () => {
           <div className="box h-52  mt-1  w-80 rounded-lg p-2  dark:bg-dark bg-amber-900">
             <div className="box2 grid grid-rows-8 p-2">
               <div className="topbox row-span-1 flex justify-between">
-                <p className="p-0 text-sm font-bold"> Revenue:</p>
+                <p className="text-sm font-bold"> Revenue:</p>
                 <img src={message} alt="" className="rev h-8 w-7" />
               </div>
               <div className="middlebox row-span-1">

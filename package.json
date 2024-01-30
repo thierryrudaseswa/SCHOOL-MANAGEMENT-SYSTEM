@@ -32,6 +32,7 @@
     "apexcharts": "^3.45.1",
     "autoprefixer": "^10.4.16",
     "chart.js": "^4.4.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
     "date-fns": "^3.1.0",
     "dayjs": "^1.11.10",
     "fullcalendar": "^6.1.10",
