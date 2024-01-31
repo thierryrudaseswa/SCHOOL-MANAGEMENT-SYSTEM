@@ -12,6 +12,7 @@ import FinancePa2 from "./pages/Finance2/FinancePa2";
 import FinancePa from "./pages/Finance/FinancePa";
 import SchoolReg from "./pages/SchoolReg/SchoolReg";
 import SignStudent from "./pages/SignClient/SignStudent";
+import React from "react"
 
 
 

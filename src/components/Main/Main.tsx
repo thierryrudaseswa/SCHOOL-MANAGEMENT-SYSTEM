@@ -38,7 +38,7 @@ const Main = () => {
                 </h1>
               </div>
               <div className="graph row-span-6  bg-orange-700 flex  h-32">
-                <GoogleLineChart />
+                {/* <GoogleLineChart /> */}
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Main = () => {
                 </h1>
               </div>
               <div className="graph row-span-6  bg-orange-700 flex  h-32">
-                <GoogleLineChart />
+                {/* <GoogleLineChart /> */}
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Main = () => {
                 </h1>
               </div>
               <div className="graph row-span-6  bg-orange-700 flex  h-32">
-                <GoogleLineChart />
+                {/* <GoogleLineChart /> */}
               </div>
             </div>
           </div>

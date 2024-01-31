@@ -15,7 +15,7 @@ root.render(
   <React.StrictMode>
     <StylesProvider injectFirst>
       <CssBaseline />
-      <div className="dark:bg-medium">
+      <div className="dark:bg-medium bg-orange-700 p-0">
       <Router>
         <App />
       </Router>

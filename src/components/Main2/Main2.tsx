@@ -3,6 +3,7 @@ import Event from "../Event/Event";
 import BasicDateCalendar from "../Calendar/Calendar";
 import EventData from "../../pages/Events/EventData";
 import EventGrid from "../../pages/Events/EventGrid";
+import React from "react";
 
 
 import Event2 from "../Event/Event2";

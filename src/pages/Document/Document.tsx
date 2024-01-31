@@ -6,7 +6,7 @@ import { FeeData } from '../Finance/InvoiceData';
 import BasicModal from '../../components/BasicalModel/BasicModal';
 import { useState } from "react";
 import DocGen2 from '../../components/DocGen/DocGen2';
-
+import React from "react";
 const columns = [
   { field: "id", headerName: "ID" },
   { field: "name", headerName: "Name", flex: 1, cellClassName: "name-column--cell" },
@@ -36,7 +36,7 @@ const Finance = () => {
         </div>
       </BasicModal>
 
-      <div className="main grid grid-cols-5">
+      <div className="main grid grid-cols-5 max-w-full">
         <div className="sidebar col-span-1">
           <SideBar />
         </div>

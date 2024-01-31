@@ -1,3 +1,10 @@
+@media only screen and (max-width:1155px){
+    .searchb{
+        display: none !important;
+    }
+
+}
+
 @media only screen and (max-width:570px){
     .mainTopbar{
         /* background-color: black; */
@@ -20,12 +27,21 @@ flex: 6;
    max-width: 18px;
    max-height: 18px;
 }
-.namesRole h1,h5{
-    display: none;
-}
+
 .account{
   max-width: 32px;
   max-height: 30px;
 }
 
+}
+@media only screen and (max-width:784px){
+    .namesRole h1,h5{
+        display: none;
+    }
+}
+@media only screen and (max-width:825px){
+    .nampro {
+        font-size: xx-small;
+
+    }
 }

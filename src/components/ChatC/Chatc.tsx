@@ -1,3 +1,4 @@
+import React from "react";
 import ms from "../../assets/images/ms.png";
 import prof from "../../assets/images/prof.png";
 import "./ChatC.css";
@@ -44,11 +45,7 @@ const Chatc = () => {
 
         const player = new Audio(URL.createObjectURL(file));
         player.play();
-        // // Handle the recorded audio blob (blob)
-        // const audioUrl = URL.createObjectURL(blob);
-        // const audio = new Audio();
-        // audio.src = audioUrl
-        // await audio.play();
+      
         setIsRecording(false);
       })
       .catch((e: any) => console.error(e));
@@ -68,10 +65,10 @@ const Chatc = () => {
         style={{ height: "730px" }}
       >
         <div
-          className="top h-24  p-5
-           flex items-center justify-between bg-white dark:bg-dark dark:text-white rounded-lg"
+          className="topChatc h-24  p-5
+           flex items-center justify-between dark:bg-dark  dark:text-white rounded-lg"
         >
-          <p className="sms  font-extrabold text-2xl">Messages</p>
+          <p className="sms  font-extrabold text-2xl  ">Messages</p>
           <div
             className="editt h-14 w-14 flex justify-center items-center rounded-2xl"
             style={{ background: "#2B59FF" }}
@@ -82,12 +79,12 @@ const Chatc = () => {
         </div>
         <div className="middle h-16 flex items-center p-3">
           <form className=" w-full">
-            <label
+            {/* <label
               htmlFor="default-search"
               className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
             >
               Search
-            </label>
+            </label> */}
             <div className="relative">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
@@ -115,7 +112,7 @@ const Chatc = () => {
               />
               <button
                 type="submit"
-                className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="searchb text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Search
               </button>
@@ -235,7 +232,7 @@ const Chatc = () => {
       </div>
 
       <div className="right col-span-8 dark:bg-dark">
-        <div className="top flex h-20  items-center justify-between pr-5 pl-5 bg-white  dark:bg-dark dark:text-white">
+        <div className="topc flex h-20  items-center justify-between pr-5 pl-5 bg-white  dark:bg-dark dark:text-white">
           <div className="pro flex items-center gap-3 ">
             <img src={prof} alt="" />
             <div className="name text-sm font-bold">RUDASESWA Thierry</div>

@@ -12,14 +12,15 @@ import person from "../../assets/images/person.png";
 import logout from "../../assets/images/logout.png";
 import "./SideBar.css"
 import { Link } from 'react-router-dom';
+import React from 'react'
 
 const SideBar = () => {
   return (
     <div className='mainSidebar bg-blue-500 dark:bg-dark' >
       <div className="main2 grid h-screen border-r-2 p-2 "> 
-        <div className="logo row-span-1 text-white flex justify-center">
+        <div className="logo row-span-1 text-white flex justify-center ">
           <Link to="/">
-          <h3 className='p-0 text-xs font-semibold'>LOGO</h3>
+          <h3 className='p-0 text-xs font-semibold s'>LOGO</h3>
           </Link>
         </div>
         <div className="menus  grid p-2 row-span-4 w-56 ">

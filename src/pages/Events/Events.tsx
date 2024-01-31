@@ -1,10 +1,11 @@
 import SideBar from "../../components/SideBar/SideBar";
 import TopBar from "../../components/TopBar/TopBar";
 import Main2 from "../../components/Main2/Main2";
+import React from "react";
 
 const Events = () => {
   return (
-    <div className="main grid grid-cols-5">
+    <div className="main grid grid-cols-5 max-w-full">
       <div className="sidebar col-span-1">
         <SideBar />
       </div>
