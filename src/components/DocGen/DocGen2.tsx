@@ -1,5 +1,5 @@
 
-
+import React from "react"
 const DocGen2 = () => {
   return (
     <div className='maind bg-white dark:bg-dark dark:text-white rounded-3xl p-4'>

@@ -6,6 +6,7 @@ import c from "../../assets/images/c.png";
 import loc from "../../assets/images/loc.png"
 import face from "../../assets/images/face.png"
 import "./Footer.css"
+import React from 'react'
 
 const Footer = () => {
   return (

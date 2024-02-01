@@ -4,3 +4,22 @@
   .ex:hover{
     background-color: #F1F1F1;
   }
+
+
+  @media only screen and (max-width:1030px){
+    .allfin{
+      font-size: small !important;
+    }
+    .rec{
+      font-size: small;
+    }
+    .butfin{
+      max-width: 100px !important;
+    }
+  }
+
+  @media only screen and (max-width:840px){
+    .allfin{
+      display: block !important;
+    }
+  }

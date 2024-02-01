@@ -1,6 +1,7 @@
 import Image from "../../components/Image/Image";
 import Form2 from "../../components/form2/Form2";
 import "./SchoolReg.css"
+import React from "react";
 
 const SchoolReg = () => {
   return (

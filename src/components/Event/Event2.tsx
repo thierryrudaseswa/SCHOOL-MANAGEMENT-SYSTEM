@@ -4,6 +4,7 @@ import cal2 from "../../assets/images/cal2.svg"
 import cal3 from "../../assets/images/cal3.svg"
 import cal4 from "../../assets/images/cal4.svg"
 import cal from "../../assets/images/cal.svg"
+import React from "react"
 
 const Event2 = () => {
   return (

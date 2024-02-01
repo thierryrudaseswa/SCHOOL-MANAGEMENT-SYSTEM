@@ -2,6 +2,7 @@
 import Form from "../../components/form/Form";
 import Image from "../../components/Image/Image";
 import "./LoginAdmin.css"
+import React from "react";
 
 const LoginAdmin = () => {
   return (

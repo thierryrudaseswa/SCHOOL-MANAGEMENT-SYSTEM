@@ -1,5 +1,6 @@
 import MaterialChart  from "../graphs/Graph";
 import "./Finance3.css"
+import React from "react"
 const FinanceCo = () => {
     const chartData: Array<Array<string | number>> = [
         ["Day", "income", "Expenses"],
@@ -11,13 +12,15 @@ const FinanceCo = () => {
       ];
 
   return (
-    <div className="grid grid-cols-12 gap-4">
+    <div className="allfin grid grid-cols-12 gap-4">
      <div className=" scroll left col-span-8 bg-white dark:bg-dark rounded-xl overflow-y-scroll" style={{height:"90vh"}}>
         <div className="head h-20  grid justify-center items-center">
            <div className=" bg-white dark:bg-dark dark:text-white w-52 grid items-center justify-center"> <h1 className=" font-bold text-lg">Balance</h1>
             <p className=" font-extrabold text-2xl ">$500M</p></div>
         </div>
-        <div className="graph h-72  flex items-center" style={{width:"860px"}}> <MaterialChart chartData={chartData} /></div>
+        <div className="graph h-72 bg-orange-500  flex items-center" >
+             {/* <MaterialChart chartData={chartData} /> */}
+             </div>
         <div className="income ">
             <div className=" h-12 bg-white dark:bg-dark dark:text-white  flex justify-start items-center font-extrabold p-2">Expenses</div>
             <div className="ex grid grid-cols-3  h-16 items-center justify-center font-bold p-4 rounded-2xl m-4 dark:text-white hover:bg-slate-600" style={{}}>
@@ -70,15 +73,15 @@ const FinanceCo = () => {
            <div className="">
            <div className=" flex justify-between p-5 items-center mb-1">
                 <p className=" font-bold">Salary</p>
-                <button className=" h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#2B59FF"}}>- 300$</button>
+                <button className="butfin h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#2B59FF"}}>- 300$</button>
             </div>
             <div className=" flex justify-between p-5 items-center mb-1">
                 <p className=" font-bold">School Fees</p>
-                <button className=" h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#4CAF50"}}>- 300$</button>
+                <button className="butfin h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#4CAF50"}}>- 300$</button>
             </div>
             <div className=" flex justify-between p-5 items-center mb-1">
                 <p className=" font-bold">Salary</p>
-                <button className=" h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#2B59FF"}}>- 300$</button>
+                <button className="butfin  h-10 w-40 rounded-xl text-lg font-bold text-white" style={{background:"#2B59FF"}}>- 300$</button>
             </div>
            </div>
             

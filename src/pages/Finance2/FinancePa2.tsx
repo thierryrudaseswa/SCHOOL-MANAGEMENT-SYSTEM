@@ -3,6 +3,7 @@ import SideBar from "../../components/SideBar/SideBar";
 import TopBar from "../../components/TopBar/TopBar";
 import InvoiceGrid from "../Finance/Finance";
 import { InvoiceData, FeeData } from '../Finance/InvoiceData'; 
+import React from "react";
 
 const columns = [
   { field: "id", headerName: "ID" },

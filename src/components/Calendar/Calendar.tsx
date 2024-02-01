@@ -3,6 +3,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import { createTheme, ThemeProvider, Theme } from '@mui/material/styles';
+import React from 'react';
 
 const themeOptions: Theme = createTheme();
 

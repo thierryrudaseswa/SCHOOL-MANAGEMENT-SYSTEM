@@ -2,6 +2,7 @@ import { Checkbox, FormControlLabel } from '@mui/material';
 import Button from "../button/Button"
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import React from 'react';
 interface Props{
   isSignUp:boolean;
   isAdmin:boolean;
