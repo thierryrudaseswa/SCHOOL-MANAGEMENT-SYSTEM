@@ -16,7 +16,7 @@ const Form:React.FC<Props> = ({isSignUp,isAdmin}) => {
   <div className="mt-10  ">
     <form className="space-y-2  w-full " action="#" method="POST">
 <div className="headText h-16">
-  <h2 className='flex w-full justify-center px-3 py-1.5 text-2xl font-bold tracking-normal leading-6  shadow-sm' style={{color:'#3E3E3E'}}>Get Started now</h2>
+  <h2 className='flex w-full justify-center px-3 py-1.5 text-2xl  p-0 font-bold tracking-normal leading-6  shadow-sm' style={{color:'#3E3E3E'}}>Get Started now</h2>
 
   {isAdmin ? ( 
      <p className='flex w-full justify-center px-3 py-1.5 text-xs font-semibold tracking-normal leading-6  max-phone:text-xs ' style={{color:'#6A6A6A'}}>Enter the required credentials to manage your school

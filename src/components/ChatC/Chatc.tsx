@@ -121,7 +121,7 @@ const Chatc = () => {
         </div>
 
         <div
-          className="scroll p-3 overflow-y-scroll"
+          className="scroll p-3 overflow-y-scroll m-0"
           style={{ height: "575px", scrollbarColor: "#4A5568 #1A202C" }}
         >
           <div className="div h-16 bg-slate-200 dark:bg-darklight dark:text-white mb-2 pr-1 pl-1 rounded-2xl grid grid-cols-12 items-center hover:bg-slate-200 cursor-pointer">

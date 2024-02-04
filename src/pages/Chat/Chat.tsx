@@ -6,7 +6,7 @@ import React from  'react'
 const Chat = () => {
   return (
     <>
-      <div className="main grid grid-cols-5 bg-orange-900  max-w-full">
+      <div className="main grid grid-cols-5 bg-orange-900  max-w-full p-0">
         <div className="sidebar col-span-1">
           <SideBar />
         </div>
