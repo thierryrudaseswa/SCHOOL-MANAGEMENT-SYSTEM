@@ -34,6 +34,7 @@
 @media only screen and (max-width:840px){
   .am{
     display: none;
+    padding: 0px;
   }
   .sms{
     font-size: smaller !important;

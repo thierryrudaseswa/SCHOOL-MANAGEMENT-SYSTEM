@@ -6,7 +6,7 @@ import React from "react";
 
 const LoginAdmin = () => {
   return (
-    <div className="flexx flex h-screen px-10 py-5 justify-center items-center">
+    <div className="flexx flex h-screen px-10 py-5 justify-center items-center" style={{background:"#c5cae9"}}>
       <div className="mainlog flex  w-4/6 max-w-[1300px] rounded-xl">
         <div className="left flex-1 rounded-l-xl" style={{ background: "#2B59FF" }}>
           <Image />

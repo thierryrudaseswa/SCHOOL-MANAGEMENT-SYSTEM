@@ -37,7 +37,7 @@ const Main2 = () => {
           <Event2 />
         </div>
 
-        {/* <div className="topc row-span-1 h-64 bg-white    rounded-xl grid-rows-6 p-3">
+        {/* <div className="topc row-span-1 p-0 h-64 bg-white    rounded-xl grid-rows-6 p-3">
           <Event />
         </div> */}
       </div>
